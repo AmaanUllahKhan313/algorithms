@@ -4,7 +4,7 @@ public class DifferenceBetweenLargest {
     public static void main(String[] args) {
       int[] a= {3,4,10,21,2};
 //        int[] a = {3, 1};
-        System.out.println(findDifferenceGFG(a));
+        System.out.println(findDifference(a));
     }
 
     private static int findDifference(int[] a) {

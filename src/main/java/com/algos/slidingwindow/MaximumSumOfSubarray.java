@@ -5,6 +5,10 @@ import java.util.List;
 
 public class MaximumSumOfSubarray {
     public static void main(String[] args) {
+        String s1 = "abc";
+        String s2 = "forabvgc";
+
+
         int[] a = {1, 2, 3, 1, 4, 5, 2, 3, 6};
         int window = 3;
         printMaximumSubArraySum(a,window);
@@ -26,4 +30,21 @@ public class MaximumSumOfSubarray {
         }
         System.out.println(list);
         }
+
+    private static void printMinSub(int[] a, int window) {
+        int start = 0,end =0 ;
+        int sum =0;
+        List<Integer> list = new ArrayList<>();
+        while(end!=window){
+            sum+=a[end];
+            end++;
+        }
+        list.add(sum);
+        while(end<a.length-1){
+            sum-=a[start++];
+            sum+=a[end++];
+            list.add(sum);
+        }
+        System.out.println(list);
+    }
 }

@@ -2,7 +2,7 @@ package com.algos.arrays;
 
 public class RepeatingElement {
     public static void main(String[] args) {
-     int[] a={1,2,4,3,2,1,5};
+     int[] a={1,2,4,3,6,1,5};
      for (int element:a) System.out.print(element+"\t");
         printRepeatingElements(a);
 /*     int[] repeatingElements = getRepeatingElements(a);
