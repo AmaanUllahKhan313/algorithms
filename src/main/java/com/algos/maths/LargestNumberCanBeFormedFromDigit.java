@@ -1,8 +1,6 @@
-package com.algos.test;
+package com.algos.maths;
 
-import com.sun.source.tree.WhileLoopTree;
-
-public class Test4 {
+public class LargestNumberCanBeFormedFromDigit {
 
     public static void main(String[] args) {
         System.out.println(largestNumber(5,12));

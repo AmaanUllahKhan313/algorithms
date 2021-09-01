@@ -1,10 +1,10 @@
-package com.algos.test;
+package com.algos.deadlock;
 
-public class NewTest {
+public class DeadlockScenario {
     public static void main(String[] args) throws InterruptedException {
 
         System.out.println("started");
-        //Thread.currentThread().join();
+        Thread.currentThread().join();
 
         Thread t1 = new Thread();
 

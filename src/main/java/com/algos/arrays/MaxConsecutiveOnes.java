@@ -1,8 +1,9 @@
-package com.algos.test;
+package com.algos.arrays;
 
-public class Test1 {
+public class MaxConsecutiveOnes {
+
     public static void main(String[] args) {
-        System.out.println(new Test1().maxConsecutiveOnes(222));
+        System.out.println(new MaxConsecutiveOnes().maxConsecutiveOnes(222));
     }
     int maxConsecutiveOnes(int N)
     {
@@ -17,7 +18,7 @@ public class Test1 {
                 if(maxSofar<max)
                     maxSofar=max;
             } else {
-                 max=0;
+                max=0;
 
             }
         }
@@ -25,8 +26,5 @@ public class Test1 {
         return maxSofar;
     }
 
-
-
- 
 
 }

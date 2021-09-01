@@ -1,6 +1,10 @@
 package com.algos.arrays;
 
+import java.io.IOException;
+import java.math.BigInteger;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class SumOfSubarray {
@@ -35,7 +39,26 @@ public class SumOfSubarray {
         }
     }
 
+    public static void method(String[] args) throws IOException {
+        int arr[] = {11, 81, 94, 43, 3};
+        int sumOfSubArray = 0;
+        int min = Integer.MAX_VALUE;
+        List list = new ArrayList();
+        int opsize = (int) Math.pow(2, arr.length);
+        for (int counter = 1; counter < opsize; counter++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (BigInteger.valueOf(counter).testBit(j)) {
+                    System.out.print(arr[j] + " ");
+                    if (min > arr[j])
+                        min = arr[j];
+                }
+            }
+            System.out.println();
+            sumOfSubArray += min;
+        }
 
+        System.out.println(sumOfSubArray);
+    }
     //My implementation
 /*    private static void myPrintSubArrayWithSum(int[] a, int sum) {
         if(a[0] == sum) System.out.println("Sub array:"+a[0]);

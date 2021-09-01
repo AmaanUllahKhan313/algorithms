@@ -1,10 +1,10 @@
-package com.algos.test;
+package com.algos.strings;
 
 import java.util.HashMap;
 
-public class Test2 {
+public class RemoveDuplicates {
     public static void main(String[] args) {
-        System.out.println(new Test2().removeDups("zvvogfg"));
+        System.out.println(new RemoveDuplicates().removeDups("zvvogfg"));
     }
 
     String removeDups(String S)
