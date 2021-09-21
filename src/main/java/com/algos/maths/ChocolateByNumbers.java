@@ -1,4 +1,4 @@
-package com.algos.arrays;
+package com.algos.maths;
 
 class ChocolateByNumbers {
 

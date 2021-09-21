@@ -3,7 +3,8 @@ package com.algos.arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FibboncaiUsingRecursion {
+public class
+FibboncaiUsingRecursion {
  List series = new ArrayList<Integer>();
     static int fib(int n)
     {
