@@ -19,7 +19,8 @@ public class HeightOfTree {
       /*  System.out.println(getDiameter(root));
         System.out.println(getTreeHeight(root));*/
       //  printLeftView(root,1);
-        System.out.println(isIdentical(root,root2));
+        //System.out.println(isIdentical(root,root2));
+        System.out.println(new HeightOfTree().isBST(root));
     }
     public static boolean isIdentical(BTree root1, BTree root2)
     {
@@ -31,16 +32,16 @@ public class HeightOfTree {
     }
 
     private static BTree initializeTree() {
-        BTree root = new BTree(1);
-        root.left = new BTree(2);
-        root.right = new BTree(3);
-        root.left.left = new BTree(4);
-        root.left.left.right = new BTree(9);
-        root.left.left.right.right = new BTree(10);
-        root.left.left.left = new BTree(8);
-        root.left.right = new BTree(5);
-        root.right.left = new BTree(6);
-        root.right.right = new BTree(7);
+        BTree root = new BTree(5);
+        root.left = new BTree(3);
+        root.right = new BTree(8);
+        root.left.left = new BTree(2);
+        root.left.right = new BTree(4);
+        //root.left.left.right.right = new BTree(10);
+      //  root.left.left.left = new BTree(8);
+      //  root.left.right = new BTree(5);
+        root.right.left = new BTree(7);
+        root.right.right = new BTree(9);
         return root;
 
     }
@@ -90,5 +91,23 @@ public class HeightOfTree {
         }
         printLeftView(bTree.right,level+1);
         printLeftView(bTree.left,level+1);
+    }
+    BTree prev;
+    public boolean isBST(BTree node)
+    {
+        // traverse the tree in inorder fashion and
+        // keep a track of previous node
+        if (node != null)
+        {
+            if (!isBST(node.left))
+                return false;
+
+            // allows only distinct values node
+            if (prev != null && node.data <= prev.data )
+                return false;
+            prev = node;
+            return isBST(node.right);
+        }
+        return true;
     }
 }

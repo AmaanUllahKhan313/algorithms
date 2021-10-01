@@ -2,7 +2,7 @@ package com.algos.arrays;
 
 public class Rotate {
     public static void main(String[] args){
-        int[] a = {1,2,3,4,5000000};
+        int[] a = {1,2,3,4,5};
         if(a.length > 100000) return;
         System.out.println("Before rotation");
         for (int n:a) {

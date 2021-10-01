@@ -1,4 +1,4 @@
-package com.algos.recursion;
+package com.algos.tree;
 
 import com.algos.tree.BinaryTree;
 

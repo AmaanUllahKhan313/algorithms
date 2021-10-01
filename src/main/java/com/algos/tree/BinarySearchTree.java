@@ -99,6 +99,7 @@ public class BinarySearchTree {
         inorder(root.right);
     }
     public static void preorder(BinarySearchTree root){
+
         if(root == null) return;
         System.out.print(root.getValue()+"\t");
         preorder(root.left);
