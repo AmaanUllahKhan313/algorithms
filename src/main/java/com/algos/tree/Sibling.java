@@ -3,13 +3,11 @@ package com.algos.tree;
 
 
 public class Sibling {
-
     static class Node
     {
         int data;
         Node left, right;
     };
-
     static Node newNode(int data)
     {
         Node node = new Node();
@@ -19,27 +17,19 @@ public class Sibling {
         return (node);
     }
     static Node root = null;
-    static Node CheckIfNodesAreSiblings(Node root,
-                                        int data_one)
-    {
+    static Node CheckIfNodesAreSiblings(Node root,int data_one){
         if (root == null)
             return root;
-
-        if (root.left != null && root.right != null)
-        {
-            int left = root.left.data;
-            if (left == data_one ){
+        if (root.left != null && root.right != null){
+            if (root.left.data == data_one )
                 return root.right;
-            }
+            if (root.right.data == data_one )
+                return root.left;
         }
         if (root.left != null)
-            CheckIfNodesAreSiblings(root.left,
-                    data_one
-            );
+            CheckIfNodesAreSiblings(root.left,data_one);
         if (root.right != null)
-            CheckIfNodesAreSiblings(root.right,
-                    data_one
-            );
+            CheckIfNodesAreSiblings(root.right,data_one);
         return root;
     }
     public static void main(String[] args)

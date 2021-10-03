@@ -87,12 +87,18 @@ public class NodeSLL {
         NodeSLL n2 = new NodeSLL(3);
         NodeSLL n3 = new NodeSLL(4);
         NodeSLL n4 = new NodeSLL(5);
+        NodeSLL n5 = new NodeSLL(6);
+        NodeSLL n6 = new NodeSLL(7);
         head.next = n1;
         n1.next = n2;
         n2.next = n3;
         n3.next = n4;
-        n4.next = n2;
+        n4.next = n5;
+        n5.next = n6;
+        n6.next = n2;
         return  head;
+        // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
+        //           ^-------------------^
 
     }
     public static void  displaySLL(){
