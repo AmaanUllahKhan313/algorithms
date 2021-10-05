@@ -27,7 +27,6 @@ public class HeghtOfTree {
         if(root == null)return 0;
         int leftHeight = getHeight(root.getLeft());
         int rightHeight = getHeight(root.getRight());
-
         return 1+Math.max(leftHeight,rightHeight);
     }
 }
