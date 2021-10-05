@@ -4,7 +4,14 @@ public class TrappingRainWater {
     public static void main(String[] args) {
         int[] a = {3, 0, 0, 2, 0, 4};
         int area = getTrappedWaterArea(a);
-        System.out.println("Area is :" + area);
+        System.out.println("Area is :" + area); /*
+
+                       .__.
+        .__.           .  .
+        .  . 1 4 .7_.8_.  .
+        .  . 2 5 .  .9 .  .
+        .__._3.6_.__.10.__.
+        */
     }
 
     public static int getTrappedWaterArea(int[] a) {
