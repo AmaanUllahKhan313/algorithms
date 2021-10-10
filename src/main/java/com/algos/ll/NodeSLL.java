@@ -4,8 +4,10 @@ public class NodeSLL {
     public int data;
     public NodeSLL next;
     static NodeSLL head = new NodeSLL(1);
-    NodeSLL(int data){
+    public NodeSLL(int data){
         this.data = data;
+    }
+    public NodeSLL(){
     }
     public static NodeSLL getDefaultSLL(){
         NodeSLL n1 = new NodeSLL(2);
