@@ -26,4 +26,20 @@ public class SubArrayWithGivenSum {
         }
         return  Arrays.copyOfRange(ints, start, end);
     }
+    private static int [] getMaxSubArray(int[] ints) {
+        int start = 0;
+        int end = 0;
+        int currentSum = 0;
+        int max = ints[0];
+        while (start!=ints.length-1) {
+            if (currentSum<max){
+                currentSum+=ints[end];
+                end++;
+            } else if(currentSum>max){
+                currentSum-=ints[start];
+                start++;
+            }
+        }
+        return  Arrays.copyOfRange(ints, start, end);
+    }
 }
