@@ -1,10 +1,9 @@
 package com.algos.graph;
 
 import java.util.Iterator;
-import java.util.LinkedList;
 
 
-class isCyclic {
+class IsCyclic {
     public static void main(String args[]) {
         Graph g = Graph.getGraph();
         System.out.print("is Cyclic : ");
