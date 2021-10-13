@@ -2,17 +2,18 @@ package com.algos.recursion;
 
 public class KthSymbolInGrammar {
     public static void main(String[] args) {
-        int symbol =getKthSymbolInGrammar(2,0);
-        System.out.println("Kth symbol is :"+symbol);
+        System.out.println(getKthSymbolInGrammar(4,5));
     }
-
     private static int getKthSymbolInGrammar(int n, int k) {
-        if(n==1 && k==1)return 0;
-        int middle = (int) Math.ceil(Math.pow(2,n-1)/2);
-        if(k<=middle) {
-         return    getKthSymbolInGrammar(n-1,k);
-        }     else{
-            return (~getKthSymbolInGrammar(n-1,k-middle));
-        }
+        return getKthGrammar(n,k-1);
+    }
+    private static int getKthGrammar(int n, int k) {
+        if(n==1) return 0;
+        int previousIndex = k/2;
+        int digit = getKthGrammar(n-1,previousIndex);
+        if (digit == 0)
+            return k%2 ==0?0:1;
+        else
+            return k%2 ==0?1:0;
     }
 }
