@@ -17,8 +17,8 @@ public class TripletSum {
     }
     private static boolean get3Sum(int[] a, int sum) {
         Arrays.sort(a);
-        int first=0,second=1,last=a.length-1;
-        while (first!=a.length-2){
+        for (int first = 0; first < a.length ; first++) {
+            int second=1,last=a.length-1;
             if (sum==a[first]+a[second]+a[last])
                 return true;
             else
