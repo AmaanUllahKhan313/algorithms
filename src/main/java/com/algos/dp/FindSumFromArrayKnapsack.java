@@ -1,7 +1,5 @@
 package com.algos.dp;
 
-import java.util.Arrays;
-
 public class FindSumFromArrayKnapsack {
     public static void main(String[] args) {
         int[] a = {6,2,7,8,4,1,3,5};

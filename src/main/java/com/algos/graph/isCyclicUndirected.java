@@ -1,7 +1,5 @@
 package com.algos.graph;
 
-import java.util.LinkedList;
-
 public class isCyclicUndirected {
     public static void main(String[] args) {
         Graph graph = Graph.getGraph();

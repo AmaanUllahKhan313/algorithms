@@ -1,8 +1,7 @@
 package com.algos.stack;
 
-import java.lang.reflect.Array;
-import java.util.*;
 import java.util.Stack;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class OverlappingIntervals {
