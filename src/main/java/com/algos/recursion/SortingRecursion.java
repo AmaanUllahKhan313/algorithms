@@ -1,6 +1,6 @@
 package com.algos.recursion;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class SortingRecursion {
     public static void main(String[] args) {

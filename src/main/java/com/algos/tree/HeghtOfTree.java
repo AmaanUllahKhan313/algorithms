@@ -1,7 +1,5 @@
 package com.algos.tree;
 
-import com.algos.tree.BinaryTree;
-
 public class HeghtOfTree {
     public static void main(String[] args) {
         BinaryTree root = new BinaryTree(21);

@@ -1,8 +1,8 @@
 package com.algos.heap;
 
-import com.algos.Input;
-
-import java.util.*;
+import java.util.Collections;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Heap {
     public static void main(String[] args) {

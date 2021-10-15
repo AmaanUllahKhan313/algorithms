@@ -1,7 +1,6 @@
 package com.algos.slidingwindow;
 
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 public class SubArrayWithGivenSum {
     public static void main(String[] args) {
