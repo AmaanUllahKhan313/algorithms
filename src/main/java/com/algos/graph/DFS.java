@@ -9,7 +9,7 @@ class DFS {
         boolean[] visited = new boolean[g.V];
         for (int i = 0; i < g.V; i++) {
             if (!visited[i])
-                DFS(0, visited, g);
+                DFS(i, visited, g);
         }
     }
 
