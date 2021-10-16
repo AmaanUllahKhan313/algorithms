@@ -6,8 +6,11 @@ class DFS {
 
     public static void main(String args[]) {
         Graph g = Graph.getGraph();
-        System.out.println("DFS : ");
-        DFS(2,new boolean[g.V],g);
+        boolean[] visited = new boolean[g.V];
+        for (int i = 0; i < g.V; i++) {
+            if (!visited[i])
+                DFS(0, visited, g);
+        }
     }
 
     static void DFS(int v, boolean visited[],Graph g){
