@@ -1,4 +1,4 @@
-package com.algos.stack;
+package com.algos.design;
 
 public class MinElementFromStack {
     int minElement;
