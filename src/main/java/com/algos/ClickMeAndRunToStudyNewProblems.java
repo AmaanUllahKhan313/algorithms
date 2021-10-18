@@ -1,4 +1,4 @@
-package com.algos.utils;
+package com.algos;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,7 +10,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.*;
 
-public class GenerateProblemToStudy {
+public class ClickMeAndRunToStudyNewProblems {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         Random r = new Random();
