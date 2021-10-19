@@ -1,6 +1,7 @@
 package com.algos.matrix;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrintInDiagonally {
     public static void main(String[] args) {
@@ -24,11 +25,17 @@ public class PrintInDiagonally {
                 (ans.get(i+j)).add(arr[i][j]);
             }
         }
+        boolean reverse = true;
         for (int i = 0; i < ans.size(); i++){
+            //only if wants to print in spiral mode
+         /*   if(reverse) {
+                Collections.reverse(ans.get(i));
+            }*/
             for (int j = ans.get(i).size() - 1; j >= 0; j--){
                 System.out.print(ans.get(i).get(j)+ " ");
             }
             System.out.println();
+            reverse = !reverse;
         }
     }
 }
