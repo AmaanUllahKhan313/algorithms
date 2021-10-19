@@ -5,10 +5,9 @@ public class LargestSquareMatrix {
         return Integer.min(Integer.min(x, y), z);
     }
 
-    public static int findLargestSquare(int[][] M)
-    {
-        int[][] T = new int[M.length][M[0].length];
+    public static int findLargestSquare(int[][] M){
         int max = 0;
+        int[][] T = new int[M.length][M[0].length];
         for (int i = 0; i < M.length; i++){
             for (int j = 0; j < M[0].length; j++){
                 T[i][j] = M[i][j];
@@ -16,9 +15,7 @@ public class LargestSquareMatrix {
                     T[i][j] = minimum(T[i][j - 1], T[i - 1][j],
                             T[i - 1][j - 1]) + 1;
                 }
-                if (max < T[i][j]) {
-                    max = T[i][j];
-                }
+                max=Math.max(T[i][j],max);
             }
         }
         return max;
