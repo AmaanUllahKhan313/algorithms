@@ -1,7 +1,7 @@
 package com.algos.strings;
 
 public class CommonPrefix {
-    public static void main2(String[] args) {
+    public static void main(String[] args) {
         String [] str ={"Disapprove","Disconnect","Disagree"}; // Dis
         String [] str2 ={"approve","Disconnect","Disagree"}; // ""
         String [] str3 ={"Dis","Dis","Dis"}; // Dis
