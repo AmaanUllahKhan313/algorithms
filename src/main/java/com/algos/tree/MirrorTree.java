@@ -18,9 +18,9 @@ public class MirrorTree {
         root.right = new Node(2);
         root.left.left = new Node(3);
         root.left.right = new Node(4);
-        root.right.left = new Node(5);
-        root.right.right = new Node(4);
-        System.out.println(isMirrorTree(root.right,root.right));
+        root.right.left = new Node(4);
+        root.right.right = new Node(3);
+        System.out.println(isMirrorTree(root.left,root.right));
     }
 
     private static boolean isMirrorTree(Node left, Node right) {
