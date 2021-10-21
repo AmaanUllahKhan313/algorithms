@@ -1,4 +1,4 @@
-package com.algos.stack;
+package com.algos.matrix;
 
 import java.util.LinkedHashMap;
 import java.util.Stack;
