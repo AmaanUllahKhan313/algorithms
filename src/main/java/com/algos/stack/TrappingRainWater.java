@@ -1,4 +1,4 @@
-package com.algos.arrays;
+package com.algos.stack;
 
 public class TrappingRainWater {
     public static void main(String[] args) {
