@@ -5,24 +5,18 @@ public class LargestNumberCanBeFormedFromDigit {
     public static void main(String[] args) {
         System.out.println(largestNumber(5,12));
     }
-    static String largestNumber(int n, int sum)
-    {
+    static String largestNumber(int n, int sum){
         String temp="";
-        int orig=sum;
-        int origN=n;
-        int sumOfDigit=0;
         while (n!=0 ||sum !=0){
             if(sum>=9){
                 temp+=9;
-                sum=sum-9;
-                sumOfDigit+=9;
+                sum-=9;
             } else {
                 temp+=sum;
-                sumOfDigit+=sum;
                 sum=0;
             }
             n--;
         }
-        return sumOfDigit==orig?temp+"0".repeat(origN-temp.length()):"-1";
+        return temp+"0".repeat(n);
     }
 }
