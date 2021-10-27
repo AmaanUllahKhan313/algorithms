@@ -1,4 +1,4 @@
-package com.algos.arrays;
+package com.algos.searching;
 
 public class MinFromRotatedSortedArray {
     public static void main(String[] args) {
