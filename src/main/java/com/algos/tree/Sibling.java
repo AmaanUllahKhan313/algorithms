@@ -34,17 +34,21 @@ public class Sibling {
     }
     public static void main(String[] args)
     {
+        root = getTree();
+        int data_one = 2;
+        System.out.print(CheckIfNodesAreSiblings(root,
+                data_one
+        ).data);
+    }
+    public static Node getTree(){
         root = newNode(1);
         root.left = newNode(2);
         root.right = newNode(3);
         root.left.left = newNode(4);
         root.right.left = newNode(5);
-        root.right.right = newNode(6);
+       // root.right.right = newNode(6);
         root.left.left.right = newNode(7);
-        int data_one = 2;
-        System.out.print(CheckIfNodesAreSiblings(root,
-                data_one
-        ).data);
+        return root;
     }
 }
 
