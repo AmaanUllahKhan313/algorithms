@@ -5,9 +5,9 @@ import java.util.Queue;
 import java.util.Stack;
 
 public class BinarySearchTree {
-    private BinarySearchTree left;
-    private BinarySearchTree right;
-    private int value;
+    BinarySearchTree left;
+    BinarySearchTree right;
+    int value;
 
     public BinarySearchTree(BinarySearchTree left, BinarySearchTree right, int value) {
         this.left = left;
