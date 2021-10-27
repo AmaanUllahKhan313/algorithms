@@ -1,31 +1,27 @@
 package com.algos.recursion;
 
 public class NumberOfSubsets_Unique {
+
     public static void main(String[] args) {
-        String input = "aab";
+        String input = "ab";
         String output = "";
-        String recorder = "";
-        generateUniqueNumberOfSubsets(output,input,recorder);
+        printNumberOfSubset(input,output);
     }
 
-    private static String generateUniqueNumberOfSubsets(String output, String input,String recorder) {
-        if(input.equals("")){
-            if(output.equals("")){
-                System.out.print("\"\",");
-                recorder = recorder+"\"\",";
-            }
-            else {
-                if(!recorder.contains(","+output+","))
-                System.out.print(output+",");
-                recorder = recorder+output+",";
-            }
-            return recorder;
+    private static void printNumberOfSubset(String input, String output) {
+        if (input.length() == 0)
+        {
+            System.out.print(output + "  ");
+            return;
         }
 
-        char firstChar = input.charAt(0);
-        input = input.substring(1);
-        recorder = generateUniqueNumberOfSubsets(output,input,recorder);
-        recorder = generateUniqueNumberOfSubsets(output+firstChar,input,recorder);
-        return recorder;
+        for(int i = 0 ;i < input.length(); i++)
+        {
+            char ch = input.charAt(i);
+            String left_substr = input.substring(0, i);
+            String right_substr = input.substring(i + 1);
+            String rest = left_substr + right_substr;
+            printNumberOfSubset(rest, output + ch);
+        }
     }
 }

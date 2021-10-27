@@ -2,21 +2,25 @@ package com.algos.recursion;
 
 public class NumberOfSubsets {
     public static void main(String[] args) {
-        String input = "ab";
+        String input = "abc";
         String output = "";
-        printNumberOfSubset(output,input);
+        printNumberOfSubset(input,output);
     }
 
-    private static void printNumberOfSubset(String output, String input) {
-        if(input.equals("")){
-            if(output.equals("")) System.out.print("\"\",");
-            else System.out.print(output+",");
+    private static void printNumberOfSubset(String input, String output) {
+        if (input.length() == 0)
+        {
+            System.out.print(output + "  ");
             return;
         }
 
-        char firstChar = input.charAt(0);
-        input = input.substring(1);
-        printNumberOfSubset(output,input);
-        printNumberOfSubset(output+firstChar,input);
+        for(int i = 0 ;i < input.length(); i++)
+        {
+            char ch = input.charAt(i);
+            String left_substr = input.substring(0, i);
+            String right_substr = input.substring(i + 1);
+            String rest = left_substr + right_substr;
+            printNumberOfSubset(rest, output + ch);
+        }
     }
 }
