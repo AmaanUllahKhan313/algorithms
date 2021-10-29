@@ -9,7 +9,7 @@ public class FinMinDifferenceInArrayPartition {
             sum+=a[i];
         }
         int maxDiff= sum/2;
-        boolean [][] t = new boolean[a.length+1][sum+1];
+        boolean [][] t = new boolean[a.length+1][maxDiff+1];
         for (int i = 0; i <= a.length; i++)
             t[i][0] = true;
         for (int i = 1; i <= maxDiff; i++)
@@ -23,6 +23,12 @@ public class FinMinDifferenceInArrayPartition {
                     t[i][j]=t[i-1][j];
                 }
             }
+        }
+        for(int i =0;i<=a.length;i++){
+            for(int j=0;j<=sum;j++){
+                System.out.print(t[i][j]+"\t");
+            }
+            System.out.println();
         }
         for (int k = maxDiff; k >= 0; k--)
         {
