@@ -1,6 +1,6 @@
 package com.algos.dp;
 
-public class FindSumFromArrayKnapsack {
+public class FindAllSubsetOfGivenSumFromArray {
     public static void main(String[] args) {
         int[] a = {6,2,7,8,4,1,3,5};
         int sum = 8;

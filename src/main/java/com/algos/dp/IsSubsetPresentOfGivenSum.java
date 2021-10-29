@@ -1,6 +1,6 @@
 package com.algos.dp;
 
-public class FindAllSubsetOfGivenSum {
+public class IsSubsetPresentOfGivenSum {
     public static void main(String[] args) {
         System.out.println(getSubset(new int[]{5, 2, 8, 10, 3, 4},9));
     }
