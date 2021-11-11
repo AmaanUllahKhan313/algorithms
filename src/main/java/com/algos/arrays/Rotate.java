@@ -10,7 +10,7 @@ public class Rotate {
             if(n>1000000)return;
         }
 
-        a = leftRotate(a,10);
+        a = rightRotate(a,2);
         if(a == null)return;
         System.out.println("After rotation ");
         for (int n:a) {
@@ -24,6 +24,15 @@ public class Rotate {
             int temp = a[0];
             for(int j=0;j<a.length-1;j++)a[j] = a[j+1];
             a[a.length-1] = temp;
+        }
+        return a;
+    }
+    private static int[] rightRotate(int[] a, int r) {
+        if(r>a.length)return null;
+        for(int i=0;i<r;i++){
+            int temp = a[a.length-1];
+            for(int j=a.length-1;j>0;j--)a[j] = a[j-1];
+            a[0] = temp;
         }
         return a;
     }
