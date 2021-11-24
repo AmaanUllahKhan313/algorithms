@@ -31,4 +31,20 @@ public class SearchAndInsertInTriePrefixTree {
         }
         return node;
     }
+/*    static boolean matchWildCard(char [] chs,int k, TrieNode node){
+        if (k == chs.length) return true;
+        if (chs[k] != '.') {
+            return node.li
+                    [chs[k] - 'a'] != null && match(chs, k + 1, node.children[chs[k] - 'a']);
+        } else {
+            for (int i = 0; i < node.children.length; i++) {
+                if (node.children[i] != null) {
+                    if (match(chs, k + 1, node.children[i])) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }*/
 }
