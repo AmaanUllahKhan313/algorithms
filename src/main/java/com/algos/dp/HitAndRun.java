@@ -8,14 +8,14 @@ public class HitAndRun {
     }
 
     private static int getScore(int[] runs, int target) {
-        int [] dp  = new int[target+1];
-        dp[0]=1;
-        for (int i = 1; i < dp.length ; i++) {
+        int t [] = new int[target+1];
+        t[0] = 1;
+        for (int i = 1; i < t.length; i++) {
             for (int j = 0; j < runs.length; j++) {
                 if (i-runs[j]>=0)
-                    dp[i]+=dp[i-runs[j]];
+                t[i] = t[i] + t[i-runs[j]];
             }
         }
-        return dp[target];
+        return t[target];
     }
 }
