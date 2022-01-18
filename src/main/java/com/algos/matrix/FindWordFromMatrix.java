@@ -1,4 +1,4 @@
-package com.algos.strings;
+package com.algos.matrix;
 
 public class FindWordFromMatrix {
     public static void main(String[] args) {
