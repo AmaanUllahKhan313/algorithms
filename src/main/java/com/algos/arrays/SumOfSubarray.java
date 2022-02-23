@@ -10,7 +10,7 @@ import java.util.Map;
 public class SumOfSubarray {
     public static void main(String[] args) {
         int[] a = {1, 4, 20, 3, 10, 5};
-        int sum = 29;
+        int sum = 23;
         printSubArrayWithSum(a, sum);
     }
 
