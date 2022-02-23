@@ -50,7 +50,6 @@ public class LRU {
     private void removeFromCache(Node node){
         Node prev_node=node.prev;
         Node next_node=node.next;
-
         prev_node.next=next_node;
         next_node.prev=prev_node;
     }
