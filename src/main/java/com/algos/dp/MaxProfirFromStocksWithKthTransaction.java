@@ -5,7 +5,7 @@ public class MaxProfirFromStocksWithKthTransaction {
         int transactions = 2;
         int[] stocksPrice = { 10, 22, 5, 75, 65, 80 };
         System.out.println("Maximum profit is: " +
-                maxProfit(stocksPrice, 1));
+                maxProfit(stocksPrice, transactions));
     }
 
     private static int maxProfit(int[] stocksPrice, int transactions) {

@@ -1,15 +1,4 @@
 package com.algos.queue;
-class Test{
-    public static void main(String[] args){
-        QueueUsingArray queue = new QueueUsingArray(1000);
-        queue.enqueue(10);
-        queue.enqueue(20);
-        queue.enqueue(30);
-        queue.enqueue(40);
-        System.out.println(queue.dequeue()
-                + " dequeued from queue\n");
-    }
-}
 class QueueUsingArray {
     int front, rear, size;
     int capacity;
@@ -19,6 +8,19 @@ class QueueUsingArray {
         front = this.size = 0;
         rear = capacity - 1;
         array = new int[this.capacity];
+    }
+    public static void main(String[] args){
+        QueueUsingArray queue = new QueueUsingArray(1000);
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(40);
+        System.out.println(queue.dequeue()
+                + " dequeued from queue\n");
+        System.out.println(queue.dequeue()
+                + " dequeued from queue\n");
+        System.out.println(queue.dequeue()
+                + " dequeued from queue\n");
     }
     void enqueue(int item){
         this.rear = (this.rear + 1)

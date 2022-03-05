@@ -46,9 +46,7 @@ public class RearrangeCharsNoAdjacentRepeated {
         Freequency previous = new Freequency('#',-1);
         input = "";
         while (0!=queue.size()){
-            Freequency temp
-                    = queue.peek();
-            queue.poll();
+            Freequency temp = queue.poll();
             input+=temp.ch;
             if(previous.freq>0)
                 queue.add(previous);
