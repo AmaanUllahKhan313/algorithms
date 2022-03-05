@@ -8,18 +8,11 @@ public class BooleanMatrix {
 
     public static void main(String[] args) {
         int [][] matrix = {
-                {1, 1, 0, 1, 1},
                 {1, 1, 1, 1, 1},
-                {1, 1, 1, 1, 0},
+                {1, 1, 0, 1, 1},
+                {1, 1, 1, 0, 1},
                 {1, 1, 1, 1, 1} };
-        for (int [] row:matrix) {
-            for (int col:row) {
-                System.out.print(col);
-            }
-            System.out.println();
-        }
-
-        setZeros(matrix);
+        setZerosForCompleteRowAndColumnWhereZerosPresent(matrix);
         for (int [] row:matrix) {
             for (int col:row) {
                 System.out.print(col);
@@ -28,7 +21,7 @@ public class BooleanMatrix {
         }
     }
 
-    private static void setZeros(int[][] matrix) {
+    private static void setZerosForCompleteRowAndColumnWhereZerosPresent(int[][] matrix) {
         boolean fr = false,fc = false;
         for(int i = 0; i < matrix.length; i++) {
             for(int j = 0; j < matrix[0].length; j++) {
