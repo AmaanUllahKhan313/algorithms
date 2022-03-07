@@ -6,9 +6,9 @@ import java.util.stream.Stream;
 public class RotateImage {
     public static void main(String[] args) {
         int arr [] [] ={{1, 2, 3, 4},
-                {6, 0, 0, 0},
-                {7, 0, 0, 0},
-                {8, 0, 0, 0}};
+                        {6, 0, 0, 0},
+                        {7, 0, 0, 0},
+                        {8, 0, 0, 0}};
         Stream.of(arr).map(Arrays::toString).forEach(System.out::println);
         System.out.println("After Rotate:");
         rotateLeft(arr);
