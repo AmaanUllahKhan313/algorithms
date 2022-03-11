@@ -28,7 +28,7 @@ public class FindLevelOfMaxOfSumOfNodes {
             int size = queue.size();
             for (int i = 0; i <size; i++) {
                 MirrorTree.Node node = queue.poll();
-                sum += node.data;;
+                sum += node.data;
                 if (node.left != null)
                     queue.add(node.left);
                 if (node.right != null)

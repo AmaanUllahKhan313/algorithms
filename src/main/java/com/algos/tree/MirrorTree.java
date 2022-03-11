@@ -26,6 +26,8 @@ public class MirrorTree {
     private static boolean isMirrorTree(Node left, Node right) {
         if(left==null && right==null)
             return true;
-        return (left.data==right.data) && isMirrorTree(left.left,right.right) && isMirrorTree(left.right,right.left);
+        return (left.data==right.data)
+                && isMirrorTree(left.left,right.right)
+                && isMirrorTree(left.right,right.left);
     }
 }

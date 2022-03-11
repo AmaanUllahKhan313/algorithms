@@ -15,12 +15,10 @@ public class InsertNodeInBST {
             root = new BTree(value);
             return root;
         }
-        if(value<root.data){
+        if(value<root.data)
             root.left = insertNodeInBST(root.left,value);
-        } else if(value>root.data){
+         else if(value>root.data)
             root.right = insertNodeInBST(root.right,value);
-        }
         return root;
     }
-
 }
