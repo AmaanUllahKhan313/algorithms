@@ -3,58 +3,33 @@ package com.algos.stack;
 import java.util.Stack;
 
 public class ReverseStack {
-    private static Stack stack
-            = new Stack();
-    java.util.Stack stack2
-            = new Stack();
-    java.util.Stack stack3
-            = new Stack();
     public static void main(String[] args) {
-
-        int i = 0 ;
-        stack.push(++i);
-        stack.push(++i);
-        stack.push(++i);
-        stack.push(++i);
-
-     /*   while (!stack.isEmpty())
-        stack2.push(stack.pop());
-
-        while (!stack2.isEmpty())
-            stack3.push(stack2.pop());
-
-        while (!stack3.isEmpty())
-            stack.push(stack3.pop());
-
-          while (!stack.isEmpty())
-           System.out.println(stack.pop());*/
-
-
-        getReverseStack(stack);
-       while (!stack.isEmpty())
-           System.out.println(stack.pop());
-
-
-
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+        stack.push(5);
+        System.out.println(stack);
+        reverseStack(stack);
+        System.out.println(stack);
     }
 
-    private static void getReverseStackTemp(int x) {
-        if (!stack.isEmpty()){
-            int a = Integer.parseInt(stack.peek()+"");
-            stack.pop();
-            getReverseStackTemp(x);
-            stack.push(a);
-        } else {
-            stack.push(x);
-        }
+    private static void reverseStack(Stack<Integer> stack) {
+        if(stack.isEmpty())return;
+        int value = stack.pop();
+        reverseStack(stack);
+        insertAtBottomOfStack(stack,value);
     }
 
-    private static void getReverseStack(Stack stack) {
-        if(!stack.isEmpty()) {
-            int x = Integer.parseInt(stack.peek()+"");
-            stack.pop();
-            getReverseStack(stack);
-            getReverseStackTemp(x);
+    private static void insertAtBottomOfStack(Stack<Integer> stack, int value) {
+        if(stack.isEmpty()){
+            stack.push(value);
+            return;
         }
+        int pop = stack.pop();
+        insertAtBottomOfStack(stack,value);
+        stack.push(pop);
+        return;
     }
 }

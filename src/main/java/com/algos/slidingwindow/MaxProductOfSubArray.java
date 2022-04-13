@@ -1,4 +1,4 @@
-package com.algos.arrays;
+package com.algos.slidingwindow;
 
 public class MaxProductOfSubArray {
     public static void main(String[] args) {

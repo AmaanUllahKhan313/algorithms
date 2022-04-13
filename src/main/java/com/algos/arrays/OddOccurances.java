@@ -2,7 +2,7 @@ package com.algos.arrays;
 
 public class OddOccurances {
     public static void main(String[] args) {
-        int[] a = {5, 7, 2, 5};
+        int[] a = {5, 7, 2, 4,6,8};
         System.out.println("Odd occurrence :"+oddOccurrence(a));
     }
 

@@ -3,8 +3,6 @@ package com.algos.arrays;
 public class ProdOfAllExceptSelf {
     public static void main(String[] args) {
         int  [] nums =new int[] {-1,1,0,-3,3};
-        int prod = 1;
-
         int n = nums.length;
         int[] res = new int[n];
         int right=1,left=1;
@@ -22,6 +20,5 @@ public class ProdOfAllExceptSelf {
         for (int n1: res) {
             System.out.println(n1);
         }
-
     }
 }

@@ -1,11 +1,10 @@
 package com.algos.trie;
 
 public class TrieNode {
-    private static final int R = 26;
     private TrieNode [] links;
     private boolean isEnd;
     public TrieNode() {
-        links = new TrieNode[R];
+        links = new TrieNode[26];
     }
     public boolean isEnd() {
         return isEnd;
