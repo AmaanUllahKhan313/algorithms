@@ -28,7 +28,7 @@ class BTree{
 
     }
 
-    private static BTree initializeTree2() {
+    public static BTree initializeTree2() {
         BTree root = new BTree(1);
         root.left = new BTree(2);
         root.right = new BTree(3);
