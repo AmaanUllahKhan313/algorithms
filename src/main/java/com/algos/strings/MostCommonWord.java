@@ -4,9 +4,9 @@ import java.util.*;
 
 public class MostCommonWord {
     public static void main(String[] args) {
-
+        System.out.println(mostCommonWord("hello all hello all hello I am back I am back back", new String[]{"hello"}));
     }
-    public String mostCommonWord(String paragraph, String[] banned) {
+    public static String mostCommonWord(String paragraph, String[] banned) {
 
         // 1). replace the punctuations with spaces,
         // and put all letters in lower case
