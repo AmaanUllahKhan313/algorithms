@@ -1,19 +1,19 @@
 package com.algos.arrays;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class TripletSum {
     public static void main(String[] args) {
 //        int[] a = {1, 2, 3, 4, 5};
 //        int sum = 9;
-        int[] a = {12, 3, 4, 1, 7, 9};
+        int[] a = {-1,0,1,2,-1,-4};
         int sum = 23;
-
-        if (get3Sum(a, sum)) {
+        System.out.println(threeSum(a).toArray());
+       /* if (threeSum(a)) {
             System.out.println("TRIPLET FOUND!");
         } else {
             System.out.println("TRIPLET NOT FOUND");
-        }
+        }*/
     }
     private static boolean get3Sum(int[] a, int sum) {
         Arrays.sort(a);
@@ -53,5 +53,26 @@ public class TripletSum {
             }
         }
         return false;
+    }
+    public static List<List<Integer>> threeSum(int[] a) {
+        Set<List<Integer>> res  = new HashSet<>();
+        if(a.length==0) return new ArrayList<>(res);
+        Arrays.sort(a);
+        for (int first = 0; first < a.length-2 ; first++) {
+            int second=first+1,last=a.length-1;
+
+            while(second<last){
+                int sum1 = a[first]+a[second]+a[last];
+                if (0==sum1){                           res.add(Arrays.asList(a[first],a[second++],a[last--]));
+                }
+                else
+                if (0>sum1)
+                    second++;
+                else
+                if (0<sum1)
+                    last--;
+            }
+        }
+        return new ArrayList(res);
     }
 }
