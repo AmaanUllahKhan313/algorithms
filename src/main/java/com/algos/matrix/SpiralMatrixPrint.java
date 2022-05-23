@@ -19,21 +19,21 @@ public class SpiralMatrixPrint {
         int colStart=0;
         int rowEnd=arr.length-1;
         int colEnd=arr[0].length-1;
-
+        int matrixSize = arr.length*arr[0].length;
         while (rowStart<=rowEnd&&rowStart<=colEnd){
-            for (int i = colStart; i <= colEnd; i++) {
+            for (int i = colStart; i <= colEnd && result.size()<matrixSize; i++) {
                 result.add(arr[rowStart][i]);
             }
             rowStart++;
-            for (int i = rowStart; i <= rowEnd; i++) {
+            for (int i = rowStart; i <= rowEnd && result.size()<matrixSize; i++) {
                 result.add(arr[i][colEnd]);
             }
             colEnd--;
-            for (int i = colEnd; i >= colStart; i--) {
+            for (int i = colEnd; i >= colStart && result.size()<matrixSize; i--) {
                 result.add(arr[rowEnd][i]);
             }
             rowEnd--;
-            for (int i = rowEnd; i >= rowStart; i--) {
+            for (int i = rowEnd; i >= rowStart && result.size()<matrixSize; i--) {
                 result.add(arr[i][colStart]);
             }
             colStart++;
