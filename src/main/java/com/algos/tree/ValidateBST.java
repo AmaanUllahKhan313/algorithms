@@ -7,15 +7,14 @@ public class ValidateBST {
         root.right = new BTree(5);
         root.left.left = new BTree(1);
         root.left.right = new BTree(4);
-        System.out.println(new ValidateBST().isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
+        System.out.println(new ValidateBST().isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE));
     }
-    BTree prev;
-    public boolean isBST(BTree node,int min, int max){
-        if (node == null)
+    public boolean isValidBST(BTree root, long min, long max) {
+        if (root==null)
             return true;
-        if (node.data < min || node.data > max)
+        if (root.data <= min || root.data >= max)
             return false;
-        return (isBST(node.left, min, node.data-1) &&
-                isBST(node.right, node.data+1, max));
+        return isValidBST(root.left,   min, root.data) &&
+                isValidBST(root.right, root.data, max);
     }
 }
