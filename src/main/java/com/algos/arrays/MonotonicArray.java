@@ -7,10 +7,9 @@ public class MonotonicArray {
     }
 
     private static boolean getMono(int[] A) {
-        int N = A.length;
         int i = 0;
-        while (i+1 < N && A[i] <= A[i+1])
+        while (i+1 < A.length && A[i] <= A[i+1])
             i++;
-        return i == N-1;
+        return i == A.length;
     }
 }
