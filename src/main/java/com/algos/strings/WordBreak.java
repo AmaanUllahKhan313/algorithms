@@ -14,12 +14,11 @@ public class WordBreak {
         System.out.println(wordBreak("samsungandmango"));
     }
     private static boolean wordBreak(String word) {
-        int size = word.length();
-        if (size == 0)
+        if (word.length() == 0)
             return true;
-        for (int i = 1; i <= size; i++){
+        for (int i = 1; i <= word.length(); i++){
             if (dictionary.contains(word.substring(0,i)) &&
-                    wordBreak(word.substring(i,size)))
+                    wordBreak(word.substring(i,word.length())))
                 return true;
         }
         return false;
