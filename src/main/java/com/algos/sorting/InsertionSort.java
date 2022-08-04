@@ -8,10 +8,8 @@ public class InsertionSort {
     }
 
     private static int [] insertionSort(int[] ints) {
-
-        int j=0;
+        int j;
         for (int i = 1; i < ints.length; i++) {
-
             int temp = ints[i];
             j=i-1;
             while (j>=0 && temp<=ints[j]){
