@@ -26,11 +26,18 @@ public class RightPointer {
 
     }
     public static void main(String[] args) {
-        connect(RightPointer.initializeTree2());
+        RightPointer.inorder(connect(RightPointer.initializeTree2()));
     }
-    public static void connect(Node root) {
+    public static void inorder(Node root){
         if(root == null) return;
+        inorder(root.left);
+        System.out.print(root.val+"\t" + "#"+ root.next + "#");
+        inorder(root.right);
+    }
+    public static Node connect(Node root) {
+        if(root == null) return root;
         helper(root.left, root.right);
+        return root;
     }
 
     static void helper(Node node1, Node node2){
