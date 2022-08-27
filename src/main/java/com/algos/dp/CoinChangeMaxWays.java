@@ -17,7 +17,7 @@ public class CoinChangeMaxWays {
             for(int j= 1;j<=sum;j++){
                 if(a[i-1]<=j){
                     t[i][j]=t[i][j-a[i-1]]+t[i-1][j];//i for unbounded knapsack adding self
-                    //t[i][j]=t[i-1][j-a[i-1]]+t[i-1][j];//i-1 for bounded knapsack adding self
+                    //t[i][j]=t[i-1][j-a[i-1]]+t[i-1][j];//i-1 for bounded knapsack
                 }else{
                     t[i][j]=t[i-1][j];
                 }
