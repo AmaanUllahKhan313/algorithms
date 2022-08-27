@@ -22,11 +22,6 @@ public class CoinChangeMaxWays {
                     t[i][j]=t[i-1][j];
                 }
             }
-        } for(int i =0;i<=a.length;i++){
-            for(int j=0;j<=sum;j++){
-                System.out.print(t[i][j]+"\t");
-            }
-            System.out.println();
         }
         return t[a.length][sum];
     }
