@@ -4,12 +4,12 @@ public class SequencePatternMatching {
     public static void main(String[] args) {
         String s1 = "abc";
         String s2 = "axbyc"; //abc
-        boolean isPatterPresent = isSequencePatternPresent(s1,s2);
-        System.out.println("Is Sequence present: "+isPatterPresent);
+        System.out.println("Is Sequence present: "+isSequencePatternPresent(s1,s2));
     }
 
     public static boolean isSequencePatternPresent(String s1, String s2) {
-        String lcs = LongestCommonSubsequence.getLongestCommonSubsequenceString(s1,s1.length(),s2,s2.length());
-        return lcs.length()==s1.length();
+        return s1.length() == LongestCommonSubsequence
+                .getLongestCommonSubsequenceCount(s1,s1
+                        .length(),s2,s2.length());
     }
 }
