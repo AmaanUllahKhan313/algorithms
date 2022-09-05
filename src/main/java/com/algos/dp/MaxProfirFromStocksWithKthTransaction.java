@@ -10,12 +10,6 @@ public class MaxProfirFromStocksWithKthTransaction {
 
     private static int maxProfit(int[] stocksPrice, int transactions) {
         int profit[] [] = new int[transactions+1] [stocksPrice.length+1];
-        for (int i = 0; i <= transactions; i++) {
-            profit[i][0]=0;
-        }
-        for (int i = 0; i <= stocksPrice.length-1; i++) {
-            profit[0][i]=0;
-        }
         for (int i = 1; i <= transactions; i++) {
             for (int j = 1; j < stocksPrice.length; j++) {
                 int maxProfit = 0;
