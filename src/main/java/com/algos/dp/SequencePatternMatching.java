@@ -10,7 +10,6 @@ public class SequencePatternMatching {
 
     public static boolean isSequencePatternPresent(String s1, String s2) {
         String lcs = LongestCommonSubsequence.getLongestCommonSubsequenceString(s1,s1.length(),s2,s2.length());
-        if(lcs.length()==s1.length())return true;
-        return false;
+        return lcs.length()==s1.length();
     }
 }
