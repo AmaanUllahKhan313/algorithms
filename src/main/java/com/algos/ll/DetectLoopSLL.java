@@ -2,11 +2,8 @@ package com.algos.ll;
 
 public class DetectLoopSLL {
     public static void main(String[] args) {
-        System.out.println("Detect Loop program");
         NodeSLL head = NodeSLL.getSLLWithLoop();
-        boolean isPresent = isLoopPresent(head);
-        if(isPresent) System.out.println("Loop is present!");
-        else System.out.println("Loop is absent");
+        System.out.println("Loop present :"  + isLoopPresent(head));
     }
 
     private static boolean isLoopPresent(NodeSLL head) {
@@ -16,7 +13,6 @@ public class DetectLoopSLL {
             ptr1 = ptr1.next;
             ptr2 = ptr2.next.next;
         }
-        if(ptr1 == ptr2)return true;
-        else return false;
+        return ptr1 == ptr2;
     }
 }

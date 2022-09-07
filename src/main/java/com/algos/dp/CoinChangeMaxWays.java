@@ -16,16 +16,12 @@ public class CoinChangeMaxWays {
         for(int i = 1;i<=a.length;i++){
             for(int j= 1;j<=sum;j++){
                 if(a[i-1]<=j){
-                    t[i][j]=t[i][j-a[i-1]]+t[i-1][j];
+                    t[i][j]=t[i][j-a[i-1]]+t[i-1][j];//i for unbounded knapsack adding self more than once times
+                    //t[i][j]=t[i-1][j-a[i-1]]+t[i-1][j];//i-1 for bounded knapsack doesn't add self more than once
                 }else{
                     t[i][j]=t[i-1][j];
                 }
             }
-        } for(int i =0;i<=a.length;i++){
-            for(int j=0;j<=sum;j++){
-                System.out.print(t[i][j]+"\t");
-            }
-            System.out.println();
         }
         return t[a.length][sum];
     }

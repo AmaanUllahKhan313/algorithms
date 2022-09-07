@@ -20,4 +20,24 @@ public class A1B1A2B2 {
         }
         return nums;
     }
+    private static void getShuffledArray(int [] arr) {
+        getShuffledArray(arr,0,arr.length-1);
+    }
+
+    private static void getShuffledArray(int [] arr, int start, int end) {
+        if (start > end)
+            return;
+        if (end - start == 1)
+            return;
+        int mid=(start+end)/2;
+        int temp = mid + 1;
+        int mmid = (start + mid) / 2;
+        for (int i = mmid+1; i <= mid; i++) {
+            int  temp1 = arr[i];
+            arr[i] = arr[temp];
+            arr[temp++] = temp1;
+        }
+        getShuffledArray(arr,start,mid);
+        getShuffledArray(arr,mid+1,end);
+    }
 }
