@@ -30,7 +30,7 @@ public class NumberOfIslands {
     private static void clearRestOfLand(int[][] grid, int i, int j) {
         if (i < 0 || j < 0 || i >= grid.length || j >= grid[i].length || grid[i][j] == '0') return;
 
-        grid[i][j] = '0';
+        grid[i][j] = 0;
         clearRestOfLand(grid, i+1, j);
         clearRestOfLand(grid, i-1, j);
         clearRestOfLand(grid, i, j+1);
