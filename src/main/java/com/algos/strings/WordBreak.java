@@ -11,16 +11,21 @@ public class WordBreak {
         for (String temp :temp_dictionary){
             dictionary.add(temp);
         }
-        System.out.println(wordBreak("samsungandmango"));
+        Map<String, Boolean> map = new HashMap<>(); // memoization
+        System.out.println(wordBreak("samsungandmango",dictionary,map));
     }
-    private static boolean wordBreak(String word) {
+    private static boolean wordBreak(String word,Set<String> dictionary, Map<String, Boolean> map) {
+        if(map.containsKey(word)) return map.get(word);
         if (word.length() == 0)
             return true;
         for (int i = 1; i <= word.length(); i++){
             if (dictionary.contains(word.substring(0,i)) &&
-                    wordBreak(word.substring(i,word.length())))
+                    wordBreak(word.substring(i,word.length()),dictionary,map)) {
+                map.put(word.substring(0, i), true);
                 return true;
+            }
         }
+        map.put(word, false);
         return false;
     }
     public List<String> wordBreak(String s, List<String> wordDict) {
