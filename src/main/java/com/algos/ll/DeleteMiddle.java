@@ -16,4 +16,8 @@ public class DeleteMiddle {
         middle.data = next.data;
         middle.next = next.next;
     }
+    public void deleteNodeWhichisPointing(NodeSLL node) {
+        node.data = node.next.data;
+        node.next = node.next.next;
+    }
 }
