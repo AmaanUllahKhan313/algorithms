@@ -1,4 +1,4 @@
-package com.algos.dp;
+package com.algos.strings;
 
 public class InterleavingStrings {
 
