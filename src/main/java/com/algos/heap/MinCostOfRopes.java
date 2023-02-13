@@ -1,7 +1,5 @@
 package com.algos.heap;
 
-import javafx.scene.layout.Priority;
-
 import java.util.PriorityQueue;
 import java.util.Queue;
 
