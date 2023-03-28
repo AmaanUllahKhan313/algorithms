@@ -9,6 +9,7 @@ public class MaxSum {
         System.out.println(maxSum(new int[] {1,3,-1,-3,5,3,6,7},3));
     }
     static int maxSum(int arr[], int k){
+        //kadanes algo
         int max = 0;int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum+=i<k?arr[i]:arr[i] - arr[i - k];
