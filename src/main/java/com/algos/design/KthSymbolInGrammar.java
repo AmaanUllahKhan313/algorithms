@@ -2,7 +2,20 @@ package com.algos.design;
 
 public class KthSymbolInGrammar {
     public static void main(String[] args) {
-        System.out.println(getKthSymbolInGrammar(3,1));
+                                /*
+                                0
+                                01
+                                0110
+                                01101001
+                                0110100110010110
+                                */
+                                /*
+                                a
+                                ab
+                                abba
+                                abbabaab
+                                */
+        System.out.println(getKthSymbolInGrammar(4,6));
     }
     private static int getKthSymbolInGrammar(int n, int k) {
         return getKthGrammar(n,k-1);
