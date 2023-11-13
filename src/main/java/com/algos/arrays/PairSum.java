@@ -41,14 +41,14 @@ public class PairSum {
         }
         return false;
     }
-    public static boolean hashPair(int[] a,int sum){
+    public static int[] hashPair(int[] a,int sum){
         HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
         for(int i=0;i<a.length;i++){
             if(map.containsKey(sum-a[i])){
-                return true;
-            }else map.put(a[i],a[i]);
+                return new int[]{i, map.get((sum-a[i]))};
+            }else map.put(a[i],i);
         }
-        return false;
+        return new int[]{};
     }
     // Driver method
     public static void main(String[] args)
