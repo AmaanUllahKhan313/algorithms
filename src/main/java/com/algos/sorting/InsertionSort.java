@@ -12,16 +12,16 @@ public class InsertionSort {
     private static void insertionSort(int[] ints) {
         int j;
         for (int i = 1; i < ints.length; i++) {
-            int temp = ints[i];
+            int key = ints[i];
             j=i-1;
              /* Move elements of arr[0..i-1], that are
                greater than key, to one position ahead
                of their current position */
-            while (j>=0 && temp<=ints[j]){
+            while (j>=0 && key<=ints[j]){
                 ints[j+1]=ints[j];
                 j--;
             }
-            ints[j+1] = temp;
+            ints[j+1] = key;
         }
     }
 }
