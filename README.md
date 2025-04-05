@@ -46,7 +46,68 @@ Cracking the coding (MAANG) interviews.
 - [FindTrailingZerosInFactorialOfNumber](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/maths/FindTrailingZerosInFactorialOfNumber.java)
 - [LargestNumberCanBeFormedFromDigit](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/maths/LargestNumberCanBeFormedFromDigit.java)
 
-...
+## Matrix
 
-(To be continued for Matrix, Queues, Searching, etc. Let me know when you're ready!)
+- [FindLeftMostOnes](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/FindLeftMostOnes.java)
+- [LargestSquareMatrix](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/LargestSquareMatrix.java)
+- [FindPathIn2DMatrix](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/FindPathIn2DMatrix.java)
+- [PrintInDiagonally](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/PrintInDiagonally.java)
+- [NumberOfIslandsSurroundedByWater](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/NumberOfIslandsSurroundedByWater.java)
+- [FindWordFromMatrix](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/FindWordFromMatrix.java)
+- [SaddlePoint](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/SaddlePoint.java)
+- [BooleanMatrix](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/BooleanMatrix.java)
+- [MinimumCostPath](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/MinimumCostPath.java)
+- [RotateImage](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/RotateImage.java)
+- [NumberOfIslands](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/NumberOfIslands.java)
+- [SpiralMatrixPrint](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/SpiralMatrixPrint.java)
+- [producerconsumer](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/producerconsumer.java)
+- [ProducerConsumer](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/matrix/ProducerConsumer.java)
+
+## Queues
+
+(Links to be added...)
+
+## Searching
+
+(Links to be added...)
+
+## Sliding Window
+
+(Links to be added...)
+
+## Sorting
+
+(Links to be added...)
+
+## Stack
+
+(Links to be added...)
+
+## Strings
+
+(Links to be added...)
+
+## Trees
+
+(Links to be added...)
+
+## Graphs
+
+(Links to be added...)
+
+## Dynamic Programming
+
+(Links to be added...)
+
+## Designs
+
+(Links to be added...)
+
+## Trie
+
+(Links to be added...)
+
+## Companies
+
+(Links to be added...)
 
