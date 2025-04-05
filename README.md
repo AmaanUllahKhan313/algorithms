@@ -2,308 +2,113 @@
 
 Cracking the coding(maang) interviews.
 
-**
-Arrays**
-CountPairsHavingSum
-DifferenceBetweenLargest
-FrequencyOfArrayElements
-MAxProfitFromStocks.java
-MajorityElement
-MaxOfJMinusI
-MergeMPlusN
-PairInArrayDivisibleByK
-ReverseArray
-RotationUsingGCD
-Segregate01
-TwoRepeatingElements
-FindLenghtOfString
-MaxConsecutiveOnes
-ShuffleArrayFromHalf
-UniqueChar
-MergeSortedArrays
-LargestNumberFromNumber
-MinimumPlatformNeeded
-MaximumMeetingsInRoom
-OddOccurances
-RepeatingElement
-SumOfSubarray
-TripletSum
-MaxOfSlice
-MonotonicArray
-MaxSumNonAdjacent
-Largest01SubArray
-MaxSumIndexOfBinaryArray
-Rotate
-BinaryGap
-FibboncaiUsingRecursion
-WaveArray
-ProdOfAllExceptSelf
-BitonicArray
-A1B1A2B2
-LowerSumEqualsHigherSum
-PairSum
-BattleShip
-CountAndSay
-LongestSubStringWithoutRepeatingChar
+# Data Structures and Algorithms
 
+Cracking the coding (MAANG) interviews.
 
-**
-Linked Lists**
-KthElement
-LoopStartNode
-PalindromeSLL
-RemoveLoopFromLL
-NodeSLL
-PairwiseSwapping
-AlternateReverse
-ReverseBetweenTwoNodesSLL
-ReverseSLL
-Intersection
-RemoveKthNodeFromLast
-DeleteMiddle
-DetectLoopSLL
+## Arrays
 
+- [CountPairsHavingSum](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/CountPairsHavingSum.java)
+- [DifferenceBetweenLargest](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/DifferenceBetweenLargest.java)
+- [FrequencyOfArrayElements](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/FrequencyOfArrayElements.java)
+- [MAxProfitFromStocks](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MAxProfitFromStocks.java)
+- [MajorityElement](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MajorityElement.java)
+- [MaxOfJMinusI](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MaxOfJMinusI.java)
+- [MergeMPlusN](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MergeMPlusN.java)
+- [PairInArrayDivisibleByK](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/PairInArrayDivisibleByK.java)
+- [ReverseArray](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/ReverseArray.java)
+- [RotationUsingGCD](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/RotationUsingGCD.java)
+- [Segregate01](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/Segregate01.java)
+- [TwoRepeatingElements](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/TwoRepeatingElements.java)
+- [FindLenghtOfString](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/FindLenghtOfString.java)
+- [MaxConsecutiveOnes](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MaxConsecutiveOnes.java)
+- [ShuffleArrayFromHalf](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/ShuffleArrayFromHalf.java)
+- [UniqueChar](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/UniqueChar.java)
+- [MergeSortedArrays](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MergeSortedArrays.java)
+- [LargestNumberFromNumber](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/LargestNumberFromNumber.java)
+- [MinimumPlatformNeeded](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MinimumPlatformNeeded.java)
+- [MaximumMeetingsInRoom](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MaximumMeetingsInRoom.java)
+- [OddOccurances](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/OddOccurances.java)
+- [RepeatingElement](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/RepeatingElement.java)
+- [SumOfSubarray](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/SumOfSubarray.java)
+- [TripletSum](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/TripletSum.java)
+- [MaxOfSlice](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MaxOfSlice.java)
+- [MonotonicArray](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MonotonicArray.java)
+- [MaxSumNonAdjacent](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MaxSumNonAdjacent.java)
+- [Largest01SubArray](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/Largest01SubArray.java)
+- [MaxSumIndexOfBinaryArray](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/MaxSumIndexOfBinaryArray.java)
+- [Rotate](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/Rotate.java)
+- [BinaryGap](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/BinaryGap.java)
+- [FibboncaiUsingRecursion](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/FibboncaiUsingRecursion.java)
+- [WaveArray](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/WaveArray.java)
+- [ProdOfAllExceptSelf](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/ProdOfAllExceptSelf.java)
+- [BitonicArray](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/BitonicArray.java)
+- [A1B1A2B2](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/A1B1A2B2.java)
+- [LowerSumEqualsHigherSum](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/LowerSumEqualsHigherSum.java)
+- [PairSum](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/PairSum.java)
+- [BattleShip](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/BattleShip.java)
+- [CountAndSay](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/CountAndSay.java)
+- [LongestSubStringWithoutRepeatingChar](https://github.com/AmaanUllahKhan313/algorithms/blob/master/src/main/java/com/algos/arrays/LongestSubStringWithoutRepeatingChar.java)
 
-**
-Maths**
-SIngleDigit
-ChocolateByNumbers
-OverlappingAreaOfRectangle
-MissingNumber
-AddNumberWithoutUsingPlusOperator
-JumpsRequiredToCrossWall
-FirstMissingPositive
-RobHouse
-StringToInteger
-Hamming
-FindTrailingZerosInFactorialOfNumber
-LargestNumberCanBeFormedFromDigit
+## Strings
 
+(Links coming soon...)
 
-**
-Matrix**
-FindLeftMostOnes
-LargestSquareMatrix
-FindPathIn2DMatrix.java
-PrintInDiagonally
-NumberOfIslandsSurroundedByWater
-FindWordFromMatrix
-SaddlePoint
-BooleanMatrix
-MinimumCostPath
-RotateImage
-NumberOfIslands
-SpiralMatrixPrint
-producerconsumer
-ProducerConsumer
+## Linked Lists
 
-**
-Queues**
-QueueUsingArray
-recursion
-SortingRecursion
-TowerOfHanoi
-PermutionWithSpace
-PermutationChangeCase
-NumberOfSubsets_Unique
+(Links coming soon...)
 
-**
-Searching**
-MinFromRotatedSortedArray
-FindFromRotatedSortedArray
-MIssingNumberFromSecondArray
-BinarySearch
-WoodCut
+## Maths
 
-**
-Sliding window**
-FirstNegativeNoInKSubarray
-FruitsBasket
-CountAllAnagrams
-MinSizeOfSubArrayWithGivenSum
-MinWindowContainsAllCharacters
-MaxProductOfSubArray
-SubArrayWithGivenSum
-WaterContainer
-MaxSum
+(Links coming soon...)
 
+## Trees
 
-**
-Sorting**
-SortUsingComparator.java
-QuickSort
-Bubble
-SelectionSort
-MergeSort
-InsertionSort
+(Links coming soon...)
 
+## Graphs
 
-**
-Stack**
-FindCelebrityStack
-FindCelebrity_Recursion
-Foundation_Program_1_NGEToRight
-Foundation_Program_2_NGEToLeft
-Foundation_Program_3_NSEToRight
-Foundation_Program_4_NSEToLeft
-InorderTraversalUsingStack
-MaxRectInBinaryMatrix
-NGE_GFG
-Practice
-StackArrayImpl
-DeleteMiddleElementFromStack
-StackSorting
-InfixToPostfix
-OverlappingIntervals
-QueueUsingStack.java
-TrappingRainWater
-PostfixToInfix
-VisitAllRooms
-StockSpanProblem.java
-MaximumAreaInHistogram.java
-ReverseStack
-ValidParenthesis
+(Links coming soon...)
 
+## Stacks
 
-**
-Strings**
-RemoveDuplicates
-ValidAnagram
-StrStr
-IsomorphicStrings
-MostCommonWord
-GenerateValidParenthisis
-InterleavingStrings
-WordBreak
-MinRepeatToMatchSubstring
-ConvertNumberToString
-CommonPrefix
+(Links coming soon...)
 
+## Queues
 
-**
-Trees**
-BinaryTree
-GFG
-PrintAllNodesFromKthDistance
-BSTOperations
-PrintRightViewOfTree
-LevelOrderInSpiral
-NoSibling
-VerticalOrderTraverse
-BinarySearchTree
-BinaryTreePrinter
-SortedArrayToBST.java
-LevelOrderBFS
-BSTToDLL
-CreateBST
-InsertNodeInBST
-IsIdenticalTree
-FindLevelOfMaxOfSumOfNodes
-MirrorTree
-SwappingToMirrorTree
-OddEvenTree
-FullBinaryTree
-SkewedBinaryTree
-MinimumSwapsToCreateBST
-KthSmallestInBST
-BTree
-LowestCommonAncestor
-ValidateBST
-HeghtOfTree
-DepthOfNaryTree
-RightPointer
-MaxPathSum
-BalancedBTree
-SumOfLeftLeaves
-MergeTwoTrees
-AverageOfLevels
-SerializeDeserializeTree
-Sibling
-DeleteNodeinBST
-DiameterOfTree
-AllPathsFromRootToAllLeafNodes
+(Links coming soon...)
 
+## Sliding Window
 
-**
-Graphs**
-isCyclicUndirected
-ShortestPath
-TopologicalSort
-KruskalMST
-NQueen
-NumberOfPathWithKthEdges
-BFS
-Graph
-IsCyclic
-DFS
-PathExist
-CenterOfStarGraph
-NumberOfProvinces
-heap
-Heap
-RearrangeCharsNoAdjacentRepeated
-Median
-MergeKSortedLinkedList
-TopKFreequentElements
-MinCostOfRopes
+(Links coming soon...)
 
+## Sorting
 
-**
-Dynamic programming**
-LongestPalindromicSubsequence
-LongestIncreasingSubsequence
-FinMinDifferenceInArrayPartition
-MinDistance
-EqualSumPartition
-WordCompletion
-DecodeMessageNumberOfWays
-LongestRepeatingSubsequence
-RodCutting
-HitAndRun
-BoxStacking
-LongestCommonSubstring
-PalindromePartition
-WildCardPatternMatching
-ClimbingStaircase
-MxSumDivByThree
-EditDistanceToMatchStrings
-CoinChangeMaxWays
-CoinChangeMinCoins
-FindAllSubsetOfGivenSumFromArray
-IsSubsetPresentOfGivenSum
-MaxProfirFromStocksWithKthTransaction
-MinBooksFromAllBoxes
-LongestCommonSubsequence
-SequencePatternMatching
-ShortestCommonSuperSequence
-MinJumpsRequired
+(Links coming soon...)
 
+## Matrix
 
-design
-BrowserForwardAndBackwardButton
-LFU
-MyHashmap
-Logger
-MinElementFromStack
-TicTacToe
-KthSymbolInGrammar
-LRU
+(Links coming soon...)
 
+## Searching
 
-**
-Trie**
-TrieNode
-SearchAndInsertInTriePrefixTree
+(Links coming soon...)
 
+## Dynamic Programming
 
-**
-Companies**
-Solution
-deadlock
-DeadlockScenario
+(Links coming soon...)
 
+## Designs
 
+(Links coming soon...)
 
+## Trie
+
+(Links coming soon...)
+
+## Companies
+
+(Links coming soon...)
 
 
 
