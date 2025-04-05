@@ -1,9 +1,5 @@
 # Data Structures and Algorithms
 
-Cracking the coding(maang) interviews.
-
-# Data Structures and Algorithms
-
 Cracking the coding (MAANG) interviews.
 
 ## Arrays
