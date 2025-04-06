@@ -2,7 +2,7 @@ package com.algos.arrays;
 
 public class PairInArrayDivisibleByK {
 
-        public  int countKdivPairs(int A[], int n, int K) throws Exception
+        public static int countKdivPairs(int A[], int n, int K) throws Exception
         {
             // Create a frequency array to count
             // occurrences of all remainders when
@@ -25,11 +25,10 @@ public class PairInArrayDivisibleByK {
                 sum += (freq[K / 2] * (freq[K / 2] - 1) / 2);
             return sum;
         }
-        public static void main(String[] args)
-        {
+        public static void main(String[] args) throws Exception {
             int A[] = { 2, 2, 1, 7, 5, 3 };
             int n = 6;
             int K = 2;
-           // System.out.print(countKdivPairs(A, n, K));
+            System.out.print(countKdivPairs(A, n, K));
         }
     }
