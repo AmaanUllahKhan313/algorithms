@@ -1,7 +1,7 @@
 package com.algos.arrays;
 
 public class ShuffleArrayFromHalf {
-
+//This is same as A1B1A2B2..
     //TimeCOmplexity
 //Space Complexity
     public static void main(String[] args) {
