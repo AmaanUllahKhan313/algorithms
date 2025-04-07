@@ -24,18 +24,14 @@ public class MaximumMeetingsInRoom{
     public static void maxMeeting(ArrayList<meeting> al, int s){
         ArrayList<Integer> m = new ArrayList<>();
         int time_limit = 0;
-        Collections.sort(al, new Comparator<meeting>() {
-            @Override
-            public int compare(meeting o1, meeting o2)
+        Collections.sort(al, (o1, o2) -> {
+            if (o1.end < o2.end)
             {
-                if (o1.end < o2.end)
-                {
-                    return -1;
-                }
-                else if (o1.end > o2.end)
-                    return 1;
-                return 0;
+                return -1;
             }
+            else if (o1.end > o2.end)
+                return 1;
+            return 0;
         });
         m.add(al.get(0).pos);
         time_limit = al.get(0).end;
