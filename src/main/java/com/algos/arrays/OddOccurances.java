@@ -8,9 +8,7 @@ public class OddOccurances {
 
     private static int oddOccurrence(int[] a) {
         int res = a[0];
-        for (int i = 1; i < a.length; i++) {
-            res = res ^ a[i];
-        }
+        for (int i = 1; i < a.length; i++) res = res ^ a[i];
         return res;
     }
 }
