@@ -1,4 +1,4 @@
-package com.algos.arrays;
+package com.algos.dp;
 
 public class MaxSumNonAdjacent {
     public static void main(String args[]) {
