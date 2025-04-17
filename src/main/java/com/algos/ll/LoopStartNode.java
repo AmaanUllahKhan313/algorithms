@@ -11,19 +11,19 @@ public class LoopStartNode {
 
     private static int getStartNodeOfLoop(ListNode head) {
         if(head == null || head.next == null) return  -1;
-        ListNode ptr1 = head,ptr2 = head.next;
-        while (ptr1 != ptr2 && ptr2.next.next != null) {
-            ptr1 = ptr1.next;
-            ptr2 = ptr2.next.next;
+        ListNode slow = head,fast = head.next;
+        while (slow != fast && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        if (ptr1 == ptr2) {
-            ptr1 = head;
-            ptr2 = ptr2.next;
+        if (slow == fast) {
+            slow = head;
+            fast = fast.next;
         }else return -1;
-        while (ptr1 != ptr2) {
-            ptr1 = ptr1.next;
-            ptr2 = ptr2.next;
+        while (slow != fast) {
+            slow = slow.next;
+            fast = fast.next;
         }
-        return ptr1.val;
+        return slow.val;
     }
 }
