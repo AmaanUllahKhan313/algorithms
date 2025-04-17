@@ -3,16 +3,16 @@ package com.algos.ll;
 public class   ReverseSLL {
     public static void main(String[] args) {
         System.out.println("Reversal program");
-        NodeSLL head = NodeSLL.getDefaultSLL();
-        NodeSLL.displaySLL();
+        ListNode head = ListNode.getDefaultSLL();
+        ListNode.displaySLL();
         head = reverseSLL(head);
         head.display(head);
     }
 
-    public static NodeSLL reverseSLL(NodeSLL originalHead) {
+    public static ListNode reverseSLL(ListNode originalHead) {
         if(originalHead == null) return originalHead;
         if(originalHead.next == null) return originalHead;
-        NodeSLL previous = null,
+        ListNode previous = null,
                 head = originalHead,
                 headNext = originalHead.next;
         while (head != null) {

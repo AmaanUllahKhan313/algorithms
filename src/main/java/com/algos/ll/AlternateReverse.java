@@ -3,14 +3,14 @@ package com.algos.ll;
 public class AlternateReverse {
     public static void main(String[] args) {
         System.out.println("Alternate Reverse program...");
-        NodeSLL head = NodeSLL.get11NodeSLL();
-        NodeSLL.displaySLL();
-        NodeSLL newHead = alternateReverse(head,3);
+        ListNode head = ListNode.get11NodeSLL();
+        ListNode.displaySLL();
+        ListNode newHead = alternateReverse(head,3);
         newHead.display(newHead);
     }
 
-    private static NodeSLL alternateReverse(NodeSLL head, int k) {
-        NodeSLL prev =null,ptr1=head,ptr2=head.next,first_node=head,last_node=head;
+    private static ListNode alternateReverse(ListNode head, int k) {
+        ListNode prev =null,ptr1=head,ptr2=head.next,first_node=head,last_node=head;
         int counter=0;
         boolean isUp = true;
         while (ptr1 != null ) {

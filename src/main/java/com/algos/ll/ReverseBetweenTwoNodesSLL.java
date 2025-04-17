@@ -3,23 +3,23 @@ package com.algos.ll;
 public class ReverseBetweenTwoNodesSLL {
     public static void main(String[] args) {
         System.out.println("Reversal program");
-        NodeSLL head = NodeSLL.getDefaultSLL();
-        NodeSLL.displaySLL();
+        ListNode head = ListNode.getDefaultSLL();
+        ListNode.displaySLL();
         head = reverseBetween(head,2,4);
         head.display(head);
     }
-    public static NodeSLL reverseBetween(NodeSLL head, int left, int right) {
+    public static ListNode reverseBetween(ListNode head, int left, int right) {
 
-        NodeSLL cur = head, prev = null;
+        ListNode cur = head, prev = null;
         while (left > 1) {
             prev = cur;
             cur = cur.next;
             left--;
             right--;
         }
-        NodeSLL con = prev, tail = cur;
+        ListNode con = prev, tail = cur;
 
-        NodeSLL third = null;
+        ListNode third = null;
         while (right > 0) {
             third = cur.next;
             cur.next = prev;

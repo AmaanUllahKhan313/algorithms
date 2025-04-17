@@ -2,15 +2,15 @@ package com.algos.ll;
 
 public class RemoveKthNodeFromLast {
     public static void main(String[] args) {
-        NodeSLL head = NodeSLL.get11NodeSLL();
-        NodeSLL.displaySLL();
+        ListNode head = ListNode.get11NodeSLL();
+        ListNode.displaySLL();
         removeNthFromEnd(head,2);
-        NodeSLL.displaySLL();
+        ListNode.displaySLL();
     }
-    public static NodeSLL removeNthFromEnd(NodeSLL head, int n) {
+    public static ListNode removeNthFromEnd(ListNode head, int n) {
 
-        NodeSLL start = new NodeSLL(0);
-        NodeSLL slow = start, fast = start;
+        ListNode start = new ListNode(0);
+        ListNode slow = start, fast = start;
         slow.next = head;
         for(int i=1; i<=n+1; i++)   {
             fast = fast.next;

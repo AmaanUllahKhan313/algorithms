@@ -2,16 +2,16 @@ package com.algos.ll;
 
 public class RemoveLoopFromLL {
     public static void main(String[] args) {
-        NodeSLL head = NodeSLL.getSLLWithLoop();
+        ListNode head = ListNode.getSLLWithLoop();
         // 1----2----3----4
         //           |    |
         //           7-6-5
 
         removeLoop(head);
     }
-    private static void removeLoop(NodeSLL head) {
+    private static void removeLoop(ListNode head) {
         //find loop
-        NodeSLL ptr1 = head,ptr2 = head;
+        ListNode ptr1 = head,ptr2 = head;
         while (ptr2.next.next != null) {
             ptr1 = ptr1.next;
             ptr2 = ptr2.next.next;
@@ -21,7 +21,7 @@ public class RemoveLoopFromLL {
             }
         }
     }
-    private static void loopFound(NodeSLL head,NodeSLL ptr1,NodeSLL ptr2) {
+    private static void loopFound(ListNode head, ListNode ptr1, ListNode ptr2) {
         //find length of loop
         int loopSize = getLength(ptr2);
         //initialize with head+loopsize to pointer 2
@@ -32,19 +32,19 @@ public class RemoveLoopFromLL {
             loopSize--;
         }
         //start moving both the pointer with same speed till they meet
-        NodeSLL lastNode = ptr2;
+        ListNode lastNode = ptr2;
         while (ptr1!=ptr2){
             lastNode = ptr2;
             ptr1=ptr1.next;
             ptr2=ptr2.next;
         }
-        System.out.println("connected node : "+ptr1.data );
+        System.out.println("connected node : "+ptr1.val);
         //make last node.next to null to remove cycle
         lastNode.next = null;
     }
-    private static int getLength(NodeSLL ptr2) {
+    private static int getLength(ListNode ptr2) {
         int count= 1 ;
-        NodeSLL temp = ptr2;
+        ListNode temp = ptr2;
         while(ptr2!=temp.next){
             count++;
             temp =  temp.next;

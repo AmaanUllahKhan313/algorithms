@@ -3,16 +3,16 @@ package com.algos.ll;
 public class DeleteMiddle {
     public static void main(String[] args){
         System.out.println("Kth element program");
-        NodeSLL head = NodeSLL.getDefaultSLL();
-        NodeSLL.displaySLL();
+        ListNode head = ListNode.getDefaultSLL();
+        ListNode.displaySLL();
         deleteMiddleElement(head);
-        NodeSLL.displaySLL();
+        ListNode.displaySLL();
     }
 
-    private static void deleteMiddleElement(NodeSLL head) {
-        NodeSLL fast = head;
-        NodeSLL slow = head;
-        NodeSLL prev = null;
+    private static void deleteMiddleElement(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
+        ListNode prev = null;
         while(fast!=null&&fast.next!=null){
             prev = slow;
             slow = slow.next;

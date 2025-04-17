@@ -1,30 +1,30 @@
 package com.algos.ll;
 
 public class Intersection {
-    static NodeSLL head1, head2;
+    static ListNode head1, head2;
     public static void main(String[] args) {
         
 
         // creating first linked list
-        head1 = new NodeSLL(3);
-        head1.next = new NodeSLL(6);
-        head1.next.next = new NodeSLL(9);
-        head1.next.next.next = new NodeSLL(15);
-        head1.next.next.next.next = new NodeSLL(30);
+        head1 = new ListNode(3);
+        head1.next = new ListNode(6);
+        head1.next.next = new ListNode(9);
+        head1.next.next.next = new ListNode(15);
+        head1.next.next.next.next = new ListNode(30);
         head1.display(head1);
 
         // creating second linked list
-        head2 = new NodeSLL(10);
-        head2.next = new NodeSLL(15);
-        head2.next.next = new NodeSLL(30);
+        head2 = new ListNode(10);
+        head2.next = new ListNode(15);
+        head2.next.next = new ListNode(30);
         head2.display(head2);
         int intersectValue = getExtraNodesLength(head1,head2);
         System.out.println("intersecting value: "+intersectValue);
     }
 
-    private static int getExtraNodesLength(NodeSLL head1, NodeSLL head2) {
+    private static int getExtraNodesLength(ListNode head1, ListNode head2) {
         int head1Length = 0,head2Length =0;
-        NodeSLL ptr1 = head1,ptr2=head2;
+        ListNode ptr1 = head1,ptr2=head2;
         while (ptr1 != null) {
             head1Length++;
             ptr1 = ptr1.next;
@@ -42,8 +42,8 @@ public class Intersection {
             for (int i = 0; i < difference; i++) ptr2 = ptr2.next;
         }
         while (ptr1 != null && ptr2 != null) {
-            if(ptr1.data == ptr2.data)
-                return ptr1.data;
+            if(ptr1.val == ptr2.val)
+                return ptr1.val;
             ptr1 = ptr1.next;
             ptr2 = ptr2.next;
         }

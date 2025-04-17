@@ -2,14 +2,14 @@ package com.algos.ll;
 
 public class DetectLoopSLL {
     public static void main(String[] args) {
-        NodeSLL head = NodeSLL.getSLLWithLoop();
+        ListNode head = ListNode.getSLLWithLoop();
         System.out.println("Loop present :"  + isLoopPresent(head));
     }
 
 
-    private static boolean isLoopPresent(NodeSLL head) {
+    private static boolean isLoopPresent(ListNode head) {
         if(head == null || head.next == null) return  false;
-        NodeSLL slow = head,fast = head.next;
+        ListNode slow = head,fast = head.next;
         while (slow != fast && fast.next.next != null) {
             slow = slow.next;
             fast = fast.next.next;
