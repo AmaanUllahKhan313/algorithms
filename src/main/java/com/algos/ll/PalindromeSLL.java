@@ -11,29 +11,32 @@ public class PalindromeSLL {
         ListNode.displaySLL();
     }
 
-    private static boolean isPalindrome(ListNode head) {
-        ListNode ptr1 = head,ptr2= head.next,ptr3 = head.next,prev = null;
-        while (ptr2 != null && ptr2.next != null) {
-            ptr1=ptr1.next;
-            if(ptr2.next.next == null)ptr2 = ptr2.next;
-            else ptr2=ptr2.next.next;
-            ptr3 = ptr3.next;
+    private static boolean isPalindrome(ListNode originalHead) {
+        ListNode slow = originalHead,
+                fast= originalHead.next,
+                head = originalHead.next,
+                prev = null;
+        while (fast != null && fast.next != null) {
+            slow=slow.next;
+            if(fast.next.next == null)fast = fast.next;
+            else fast=fast.next.next;
+            head = head.next;
         }
-        System.out.println("ptr1:"+ptr1.val +" ptr2:"+ptr2.val +" ptr3:"+ptr3.val);
+        System.out.println("slow:"+slow.val +" fast:"+fast.val +" head:"+head.val);
         //reverse the linked list
-        while (ptr1 != null) {
-            ptr1.next = prev;
-            prev = ptr1;
-            ptr1 = ptr3;
-            if(ptr3!=null)ptr3 = ptr3.next;
+        while (slow != null) {
+            slow.next = prev;
+            prev = slow;
+            slow = head;
+            if(head!=null)head = head.next;
         }
-        ptr2.display(ptr2);
+        fast.display(fast);
         //Node to node data comparison
-        ptr1 = head;
-        while (ptr2!=null){
-            if(ptr2.val !=ptr1.val)break;
-            ptr1 = ptr1.next;
-            ptr2 = ptr2.next;
+        slow = originalHead;
+        while (fast!=null){
+            if(fast.val !=slow.val)break;
+            slow = slow.next;
+            fast = fast.next;
         }
 
         ListNode reversePtr1=prev,reversePtr2 = prev.next;
@@ -45,7 +48,7 @@ public class PalindromeSLL {
             reversePtr1=reversePtr2;
             if(reversePtr2!=null)reversePtr2=reversePtr2.next;
         }
-        if(ptr2==null)
+        if(fast==null)
         return true;
         else return false;
     }
