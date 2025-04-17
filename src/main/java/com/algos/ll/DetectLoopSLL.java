@@ -6,13 +6,14 @@ public class DetectLoopSLL {
         System.out.println("Loop present :"  + isLoopPresent(head));
     }
 
+
     private static boolean isLoopPresent(NodeSLL head) {
         if(head == null || head.next == null) return  false;
-        NodeSLL ptr1 = head,ptr2 = head.next;
-        while (ptr1 != ptr2 && ptr2.next.next != null) {
-            ptr1 = ptr1.next;
-            ptr2 = ptr2.next.next;
+        NodeSLL slow = head,fast = head.next;
+        while (slow != fast && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        return ptr1 == ptr2;
+        return slow == fast;
     }
 }
