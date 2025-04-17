@@ -5,19 +5,23 @@ public class DeleteMiddle {
         System.out.println("Kth element program");
         NodeSLL head = NodeSLL.getDefaultSLL();
         NodeSLL.displaySLL();
-        NodeSLL middle = NodeSLL.getMiddleElement();
-        deleteMiddleElement(middle);
+        deleteMiddleElement(head);
         NodeSLL.displaySLL();
     }
 
-    private static void deleteMiddleElement(NodeSLL middle) {
-        if(middle==null)return;
-        NodeSLL next = middle.next;
-        middle.data = next.data;
-        middle.next = next.next;
-    }
-    public void deleteNodeWhichisPointing(NodeSLL node) {
-        node.data = node.next.data;
-        node.next = node.next.next;
+    private static void deleteMiddleElement(NodeSLL head) {
+        NodeSLL fast = head;
+        NodeSLL slow = head;
+        NodeSLL prev = null;
+        while(fast!=null&&fast.next!=null){
+            prev = slow;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        if(slow!=null&&prev!=null)
+            prev.next=slow.next;
+        if(prev==null){
+            head=null;
+        }
     }
 }
