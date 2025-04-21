@@ -1,6 +1,6 @@
 package com.algos.stack;
 
-public class Practice {
+public class FindCelebrity {
     static int[][] CELEBRITY_MATRIX =
                     {{0,1,0,0},
                     {0,0,0,0},
