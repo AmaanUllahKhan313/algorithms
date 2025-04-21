@@ -1,6 +1,6 @@
 package com.algos.stack;
 
-public class StackArrayImpl {
+public class ImplementStackUsingArray {
     private int top = -1;
     int[] stack;
     int min;
@@ -9,7 +9,7 @@ public class StackArrayImpl {
         return min;
     }
 
-    public StackArrayImpl(int size) {
+    public ImplementStackUsingArray(int size) {
         stack = new int[size];
     }
     public boolean push(int value){
