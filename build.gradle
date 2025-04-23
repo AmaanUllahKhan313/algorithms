@@ -5,9 +5,10 @@ plugins {
 group 'com.algos'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
 }
 
+targetCompatibility = JavaVersion.VERSION_11
