@@ -44,4 +44,33 @@ public class StockSpanProblem {
         }
         return list;
     }
+
+}
+//easy
+class StockSpanner {
+    public static void main(String[] args) {
+        StockSpanner stockSpanner = new StockSpanner();
+        stockSpanner.next(100);
+        stockSpanner.next(80);
+        stockSpanner.next(60);
+        stockSpanner.next(70);
+        stockSpanner.next(60);
+        stockSpanner.next(75);
+        stockSpanner.next(85);
+    }
+    Stack<int[]> s;
+    public StockSpanner() {
+        s = new Stack<>();
+    }
+
+    public int next(int price) {
+        int span = 1;
+        while (!s.isEmpty() && price >= s.peek()[0]) { // If the current price is greater than stack peek.
+            span += s.peek()[1];
+            s.pop();
+        }
+        s.push(new int[]{price, span});
+        System.out.println(span);
+        return span;
+    }
 }
