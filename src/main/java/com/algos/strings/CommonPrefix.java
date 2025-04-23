@@ -21,7 +21,7 @@ public class CommonPrefix {
             for (int j = 1; j < str.length; j++) {
                 if(null==str[j])
                     return "";
-                if (firstString[i] != str[j].toCharArray()[i])
+                if (new String(String.valueOf(firstString[i])).equals (new String(String.valueOf(str[j].toCharArray()[i]))))
                     return result;
             }
             result = result + firstString[i];

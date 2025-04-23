@@ -14,7 +14,7 @@ public class Foundation_Program_1_NGEToRight {
     }
 
     private static ArrayList getNGEToRight(int[] a) {
-        StackArrayImpl stack = new StackArrayImpl(a.length);
+        ImplementStackUsingArray stack = new ImplementStackUsingArray(a.length);
         ArrayList list = new ArrayList();
 
         //start the iteration

@@ -13,7 +13,7 @@ public class Foundation_Program_4_NSEToLeft {
     }
 
     private static ArrayList getNSEToLeft(int[] a) {
-        StackArrayImpl stack = new StackArrayImpl(a.length);
+        ImplementStackUsingArray stack = new ImplementStackUsingArray(a.length);
         ArrayList list = new ArrayList();
 
         for(int i =0 ; i<a.length;i++){

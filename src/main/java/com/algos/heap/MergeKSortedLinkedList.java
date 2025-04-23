@@ -1,35 +1,35 @@
 package com.algos.heap;
 
-import com.algos.ll.NodeSLL;
+import com.algos.ll.ListNode;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class MergeKSortedLinkedList {
     public static void main(String[] args) {
-        NodeSLL[] lists = new NodeSLL[3];
+        ListNode[] lists = new ListNode[3];
         for (int i = 0; i < 3; i++) {
-            lists[i] = NodeSLL.getDefaultSLL();
+            lists[i] = ListNode.getDefaultSLL();
         }
         System.out.println("merge linked list :");
-        NodeSLL head = getMergeList(lists);
+        ListNode head = getMergeList(lists);
         while (head!=null){
-            System.out.println(head.data);
+            System.out.println(head.val);
             head = head.next;
         }
     }
-    private static NodeSLL getMergeList(NodeSLL [] lists) {
+    private static ListNode getMergeList(ListNode[] lists) {
         Queue<Integer> queue = new PriorityQueue<>();
         for (int i = 0; i < lists.length; i++) {
             while (lists[i]!=null){
-                queue.add(lists[i].data);
+                queue.add(lists[i].val);
                 lists[i] = lists[i].next;
             }
         }
-        NodeSLL temp = new NodeSLL(queue.poll());
-        NodeSLL head = temp;
+        ListNode temp = new ListNode(queue.poll());
+        ListNode head = temp;
         while (!queue.isEmpty()){
-            NodeSLL newNode  = new NodeSLL(queue.poll());
+            ListNode newNode  = new ListNode(queue.poll());
             temp.next = newNode;
             temp = newNode;
         }

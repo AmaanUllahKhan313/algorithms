@@ -9,7 +9,7 @@ public class NextGreaterElementFromList {
         System.out.println();
         printNGE(a);
 
-        StackArrayImpl stack = new StackArrayImpl(10);
+        ImplementStackUsingArray stack = new ImplementStackUsingArray(10);
         stack.push(10);
         stack.push(3);
         stack.push(5);
@@ -20,7 +20,7 @@ public class NextGreaterElementFromList {
     }
 
     private static void printNGE(int[] a) {
-        StackArrayImpl s = new StackArrayImpl(a.length);
+        ImplementStackUsingArray s = new ImplementStackUsingArray(a.length);
         s.push(a[0]);
         int element, next ;
         for (int i = 1; i < a.length; i++) {

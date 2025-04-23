@@ -13,7 +13,7 @@ public class Foundation_Program_2_NGEToLeft {
     }
 
     private static ArrayList getNGEToLeft(int[] a) {
-        StackArrayImpl stack = new StackArrayImpl(a.length);
+        ImplementStackUsingArray stack = new ImplementStackUsingArray(a.length);
         ArrayList list = new ArrayList();
 
         for(int i =0 ; i<a.length;i++){

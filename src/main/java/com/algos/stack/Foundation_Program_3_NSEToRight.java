@@ -15,7 +15,7 @@ public class Foundation_Program_3_NSEToRight {
     }
 
     private static ArrayList getNSEToRight(int[] a) {
-        StackArrayImpl stack = new StackArrayImpl(a.length);
+        ImplementStackUsingArray stack = new ImplementStackUsingArray(a.length);
         ArrayList list = new ArrayList();
 
         //start the iteration

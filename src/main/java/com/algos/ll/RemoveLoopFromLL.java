@@ -11,34 +11,34 @@ public class RemoveLoopFromLL {
     }
     private static void removeLoop(ListNode head) {
         //find loop
-        ListNode ptr1 = head,ptr2 = head;
-        while (ptr2.next.next != null) {
-            ptr1 = ptr1.next;
-            ptr2 = ptr2.next.next;
-            if(ptr1 == ptr2 ){
-                loopFound(head,ptr1,ptr2);
+        ListNode slow = head,fast = head;
+        while (fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast ){
+                loopFound(head,slow,fast);
                 break;
             }
         }
     }
-    private static void loopFound(ListNode head, ListNode ptr1, ListNode ptr2) {
+    private static void loopFound(ListNode head, ListNode slow, ListNode fast) {
         //find length of loop
-        int loopSize = getLength(ptr2);
+        int loopSize = getLength(fast);
         //initialize with head+loopsize to pointer 2
-        ptr1=head;
-        ptr2=head;
+        slow=head;
+        fast=head;
         while (loopSize!=0){
-            ptr2=ptr2.next;
+            fast=fast.next;
             loopSize--;
         }
         //start moving both the pointer with same speed till they meet
-        ListNode lastNode = ptr2;
-        while (ptr1!=ptr2){
-            lastNode = ptr2;
-            ptr1=ptr1.next;
-            ptr2=ptr2.next;
+        ListNode lastNode = fast;
+        while (slow!=fast){
+            lastNode = fast;
+            slow=slow.next;
+            fast=fast.next;
         }
-        System.out.println("connected node : "+ptr1.val);
+        System.out.println("connected node : "+slow.val);
         //make last node.next to null to remove cycle
         lastNode.next = null;
     }
