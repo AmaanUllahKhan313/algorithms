@@ -1,9 +1,8 @@
 package com.algos4_slidingwindow;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
-public class MaxSum {
+public class slidingwindow_1MaxSum {
 
     public static void main(String[] args) {
         System.out.println(maxSum(new int[] {1,3,-1,-3,5,3,6,7},3));
