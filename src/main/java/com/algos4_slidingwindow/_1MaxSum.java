@@ -2,7 +2,7 @@ package com.algos4_slidingwindow;
 
 import java.util.*;
 
-public class slidingwindow_1MaxSum {
+public class _1MaxSum {
 
     public static void main(String[] args) {
         System.out.println(maxSum(new int[] {1,3,-1,-3,5,3,6,7},3));
