@@ -2,19 +2,16 @@ package com.algos4_slidingwindow;
 
 public class _9MaxProductOfSubArray {
     public static void main(String[] args) {
-        System.out.println(getMaxProductSubArray(new int []{2,3,-2,4}));
+        System.out.println(getMaxProductSubArray(new int []{-2,0,-1}));
     }
+    //KADANES algo for product
     private static int getMaxProductSubArray(int [] ints) {
-        int prd1 = 1 ;
-        int prd2 = 1;
-        int max= Integer.MIN_VALUE;
-        for (int i: ints) {
-            int t1 = (prd1==0&&i!=0?1:prd1) * i;
-            int t2 = (prd2==0&&i!=0?1:prd2) * i;
-            prd1 = Math.max(i,Math.max(t1,t2));
-            prd2 = Math.min(i,Math.min(t1,t2));
-            max = Math.max(max,prd1);
+        int n = ints.length, res = ints[0], left = 0, right = 0;
+        for (int i = 0; i < n; i++) {
+            left =  (left == 0 ? 1 : left) * ints[i];
+            right =  (right == 0 ? 1 : right) * ints[n - 1 - i];
+            res = Math.max(res, Math.max(left, right));
         }
-        return max;
+        return res;
     }
 }
