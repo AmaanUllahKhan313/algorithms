@@ -1,6 +1,6 @@
 package com.algos4_slidingwindow;
 
-public class MaxProductOfSubArray {
+public class _9MaxProductOfSubArray {
     public static void main(String[] args) {
         System.out.println(getMaxProductSubArray(new int []{2,3,-2,4}));
     }
