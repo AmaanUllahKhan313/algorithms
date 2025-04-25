@@ -3,9 +3,8 @@ package com.algos4_slidingwindow;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.IntStream;
 
-public class FruitsBasket {
+public class _3FruitsBasket {
     public static void main(String[] args) {
         Arrays.stream(getMaxFruits(new String[]{"Mango_Tree","Apple_Tree","Banana_Tree","Apple_Tree","Apple_Tree"})).forEach(System.out::println);
 

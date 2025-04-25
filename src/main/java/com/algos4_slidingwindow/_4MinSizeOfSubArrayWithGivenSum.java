@@ -1,8 +1,6 @@
 package com.algos4_slidingwindow;
 
-import java.util.Arrays;
-
-public class MinSizeOfSubArrayWithGivenSum {
+public class _4MinSizeOfSubArrayWithGivenSum {
     public static void main(String[] args) {
         System.out.println(getMinSubArrayWithGivenSum(new int [] {1,5,6,4,3,2,7,8},9));
     }
