@@ -2,7 +2,7 @@ package com.algos4_slidingwindow;
 
 import java.util.Arrays;
 
-public class SubArrayWithGivenSum {
+public class _2SubArrayWithGivenSum {
     public static void main(String[] args) {
         Arrays.stream(getSubArrayWithGivenSum(new int [] {1,5,6,4,3,2,7,8},9)).forEach(x->System.out.print(x+" "));
     }

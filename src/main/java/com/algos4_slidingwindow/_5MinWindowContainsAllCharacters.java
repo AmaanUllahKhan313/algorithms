@@ -1,8 +1,6 @@
 package com.algos4_slidingwindow;
 
-import java.util.HashMap;
-
-public class MinWindowContainsAllCharacters {
+public class _5MinWindowContainsAllCharacters {
     public static void main(String[] args){
         String text = "this is a test string";
         String find = "tist";
