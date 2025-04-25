@@ -1,8 +1,8 @@
 package com.algos4_slidingwindow;
 
-public class WaterContainer {
+public class _10WaterContainer {
     public static void main(String[] args) {
-        System.out.println(getMaxWater(new int[]{2,3,4,5,18,17,6}));
+        System.out.println(getMaxWater(new int[]{1,8,6,2,5,4,8,3,7}));
     }
 
     private static int getMaxWater(int[] ints) {
@@ -12,10 +12,10 @@ public class WaterContainer {
             max = Math.max (max, (right-left) * Math.min(ints[left], ints[right]));
             if (ints[left] < ints[right]) {
                 int i = left;
-                while (ints[left] <= ints[i] ) left++;
+                while (left!=right&&ints[left] <= ints[i] ) left++;
             } else {
                 int j = right;
-                while (ints[j] >= ints[right] ) right--;
+                while (left!=right&&ints[j] >= ints[right] ) right--;
             }
         }
         return max;
