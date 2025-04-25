@@ -2,7 +2,7 @@ package com.algos4_slidingwindow;
 
 import java.util.Arrays;
 
-public class CountAllAnagrams {
+public class _2CountAllAnagrams {
     public static void main(String[] args) {
         System.out.println(countAllAnagramOfWordFromText("for","forxxorfxdofr"));
     }
