@@ -7,27 +7,28 @@ import java.util.stream.IntStream;
 
 public class FruitsBasket {
     public static void main(String[] args) {
-        IntStream.of(getMaxFruits(new int[]{1,2,3,2,2})).forEach(System.out::println);
+        Arrays.stream(getMaxFruits(new String[]{"Mango_Tree","Apple_Tree","Banana_Tree","Apple_Tree","Apple_Tree"})).forEach(System.out::println);
+
     }
 
-    private static int getMaxFruits(int[] trees) {
+    private static String [] getMaxFruits(String[] trees) {
         int max = Integer.MIN_VALUE;
         int i=0;
         int j=0;
         int fruitsIndexStart=0;
         int fruitsIndexEnds=0;
-        Map<Integer,Integer> basket = new HashMap<Integer, Integer>();
+        Map<String,Integer> basket = new HashMap<String, Integer>();
         while (j<trees.length){
             basket.put(trees[j],basket.getOrDefault(trees[j],0)+1);
             if (basket.size()<=2) {
                 // if wants to print array
-               /* if(j-i+1>max){
+                if(j-i+1>max){
                     fruitsIndexStart = i;
                     fruitsIndexEnds = j+1;
                     max=j-i+1;
-                }*/
+                }
                //get max count only
-                max=Math.max(max,j-i+1);
+                //max=Math.max(max,j-i+1);
             }
             while (i<trees.length&&basket.size()>2){
                 if(basket.containsKey(trees[i])) {
@@ -38,8 +39,9 @@ public class FruitsBasket {
             } j++;
         }
         // to get array
-        //return Arrays.copyOfRange(trees,fruitsIndexStart,fruitsIndexEnds);
-        return max;
+        return Arrays.copyOfRange(trees,fruitsIndexStart,fruitsIndexEnds);
+        //only for count
+        //return max;
     }
 
 }
