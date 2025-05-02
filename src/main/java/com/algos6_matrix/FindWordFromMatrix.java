@@ -2,14 +2,15 @@ package com.algos6_matrix;
 
 public class FindWordFromMatrix {
     public static void main(String[] args) {
-        char[][] grid = { { 'G', 'E', 'E', 'K', 'S', 'F', 'O', 'R', 'G', 'E', 'E', 'K', 'S' },
+        char[][] grid = {
+                { 'G', 'E', 'E', 'K', 'S', 'F', 'O', 'R', 'G', 'E', 'E', 'K', 'S' },
                 { 'G', 'E', 'E', 'K', 'S', 'Q', 'U', 'I', 'Z', 'G', 'E', 'E', 'K' },
-                { 'I', 'D', 'E', 'Q', 'A', 'P', 'R', 'A', 'C', 'T', 'I', 'C', 'E' } };
-        wordSearch(grid, "GEEKS");
-       /* System.out.println();
-        wordSearch(grid, "EEE");*/
+                { 'I', 'D', 'E', 'Q', 'A', 'P', 'R', 'A', 'C', 'T', 'I', 'C', 'E' }
+        };
+        System.out.println(wordSearch(grid, "GEEKS"));
     }
-    private static void wordSearch(char[][] grid, String word) {
+    private static String wordSearch(char[][] grid, String word) {
+        String result = "";
         int[] xDirection = { -1, -1, -1, 0, 0, 1, 1, 1 };
         int[] yDirection = { -1, 0, 1, -1, 1, -1, 0, 1 };
         for (int row = 0; row < grid.length; row++) {
@@ -24,10 +25,11 @@ public class FindWordFromMatrix {
                             columnMove+=yDirection[move];
                         }
                         if(move==word.length())
-                            System.out.println("word found at : "+ row + "and" + column);
+                            result = "word found at : row="+ row + " and column=" + column;
                     }
                 }
             }
         }
+        return result;
     }
 }
