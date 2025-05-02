@@ -25,7 +25,7 @@ public class FindWordFromMatrix {
                             columnMove+=yDirection[move];
                         }
                         if(move==word.length())
-                            result = "word found at : row="+ row + " and column=" + column;
+                            result = "word found at : row="+ row + "and" + column;
                     }
                 }
             }
