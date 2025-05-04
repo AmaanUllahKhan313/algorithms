@@ -1,6 +1,6 @@
 package com.algos6_matrix;
 
-public class NumberOfIslandsSurroundedByWater {
+public class _11NumberOfIslandsSurroundedByWater {
     private static boolean flag=true;
     public static void main(String[] args) {
         int [][] matrix = {

@@ -1,9 +1,6 @@
 package com.algos6_matrix;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
-public class NumberOfIslands {
+public class _10NumberOfIslands {
     public static void main(String[] args) {
         int [][] matrix = {
                 {1,1,1,1,1,1,1,0},

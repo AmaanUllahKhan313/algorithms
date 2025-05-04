@@ -3,7 +3,7 @@ package com.algos6_matrix;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SpiralMatrixPrint {
+public class _8SpiralMatrixPrint {
     public static void main(String[] args) {
         int [][] arr = {
                 { 1, 2, 3, 4 },

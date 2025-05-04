@@ -1,6 +1,6 @@
 package com.algos6_matrix;
 
-public class SaddlePoint {
+public class _7SaddlePoint {
     public static void main(String[] args){
         int mat[][] = {
                 {1, 2, 3},

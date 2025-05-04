@@ -1,6 +1,6 @@
 package com.algos6_matrix;
 
-public class FindWordFromMatrix {
+public class _4FindWordFromMatrix {
     public static void main(String[] args) {
         char[][] grid = {
                 { 'G', 'E', 'E', 'K', 'S', 'F', 'O', 'R', 'G', 'E', 'E', 'K', 'S' },

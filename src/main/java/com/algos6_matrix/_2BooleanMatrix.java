@@ -1,9 +1,6 @@
 package com.algos6_matrix;
 
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
-public class BooleanMatrix {
+public class _2BooleanMatrix {
 
 
     public static void main(String[] args) {

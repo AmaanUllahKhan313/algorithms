@@ -1,6 +1,6 @@
 package com.algos6_matrix;
 
-public class LargestSquareMatrix {
+public class _9LargestSquareMatrix {
     public static int minimum (int x, int y, int z) {
         return Integer.min(Integer.min(x, y), z);
     }

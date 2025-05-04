@@ -1,9 +1,8 @@
 package com.algos6_matrix;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
-public class PrintInDiagonally {
+public class _6PrintInDiagonally {
     public static void main(String[] args) {
         int [][] arr = {
                 { 1, 2, 3, 4 },

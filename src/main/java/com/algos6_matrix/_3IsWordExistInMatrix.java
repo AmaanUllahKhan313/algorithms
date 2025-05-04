@@ -1,6 +1,6 @@
 package com.algos6_matrix;
 
-public class IsWordExistInMatrix {
+public class _3IsWordExistInMatrix {
     public static void main(String[] args) {
         char[][] grid = {
                 { 'G', 'E', 'E', 'K', 'S', 'F', 'O', 'R', 'G', 'E', 'E', 'K', 'S' },

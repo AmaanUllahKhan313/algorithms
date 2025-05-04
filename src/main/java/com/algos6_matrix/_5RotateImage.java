@@ -3,7 +3,7 @@ package com.algos6_matrix;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
-public class RotateImage {
+public class _5RotateImage {
     public static void main(String[] args) {
         int arr [] [] ={{1, 2, 3, 4},
                         {6, 0, 0, 0},

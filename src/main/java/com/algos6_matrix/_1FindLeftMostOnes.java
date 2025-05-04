@@ -1,6 +1,6 @@
 package com.algos6_matrix;
 
-public class FindLeftMostOnes {
+public class _1FindLeftMostOnes {
 
     public static void main(String[] args) {
         int arr [] [] ={
