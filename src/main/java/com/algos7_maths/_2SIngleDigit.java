@@ -1,6 +1,6 @@
 package com.algos7_maths;
 
-public class SIngleDigit {
+public class _2SIngleDigit {
     public static void main(String[] args) {
         System.out.println(getSingleDigit(256));
     }

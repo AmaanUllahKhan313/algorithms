@@ -1,6 +1,6 @@
 package com.algos7_maths;
 
-public class StringToInteger {
+public class _1StringToInteger {
     public static void main(String[] args) {
         String str = "123";
         int res = 0;
