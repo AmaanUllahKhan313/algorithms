@@ -34,7 +34,7 @@ class IndexManager{
                 ", j=" + j;
     }
 }
-public class FindPathIn2DMatrix {
+public class _12FindPathIn2DMatrix {
 /*
          0 1 2 3 4 5 6
         0{". # . # # # #"
