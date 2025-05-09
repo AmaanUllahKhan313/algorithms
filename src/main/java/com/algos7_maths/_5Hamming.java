@@ -1,6 +1,6 @@
 package com.algos7_maths;
 
-public class Hamming {
+public class _5Hamming {
     public static void main(String[] args) {
         System.out.println(getHamming(680142203,
                 1111953568));

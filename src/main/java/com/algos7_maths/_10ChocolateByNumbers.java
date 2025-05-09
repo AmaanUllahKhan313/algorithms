@@ -1,6 +1,6 @@
 package com.algos7_maths;
 
-class ChocolateByNumbers {
+class _10ChocolateByNumbers {
 
     public static void main(String[] args) {
         System.out.println(solution(10,4));

@@ -1,6 +1,6 @@
 package com.algos7_maths;
 
-public class OverlappingAreaOfRectangle {
+public class _8OverlappingAreaOfRectangle {
     static class Point {
         int x, y;
         public Point(int x, int y){

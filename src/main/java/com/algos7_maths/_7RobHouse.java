@@ -1,6 +1,6 @@
 package com.algos7_maths;
 
-public class RobHouse {
+public class _7RobHouse {
     public static void main(String[] args) {
         int moneyInHouse [] = {2,7,9,3,1};
         System.out.println(rob(moneyInHouse));

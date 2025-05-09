@@ -1,6 +1,6 @@
 package com.algos7_maths;
 
-public class JumpsRequiredToCrossWall {
+public class _6JumpsRequiredToCrossWall {
     public static void main(String[] args) {
         int height [] = {11, 10, 10, 9};
         int climb = 10;

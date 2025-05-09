@@ -1,6 +1,6 @@
 package com.algos7_maths;
 
-public class LargestNumberCanBeFormedFromDigit {
+public class _4LargestNumberCanBeFormedFromDigit {
 
     public static void main(String[] args) {
         System.out.println(largestNumber(5,12));

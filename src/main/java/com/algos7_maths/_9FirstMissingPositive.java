@@ -1,6 +1,6 @@
 package com.algos7_maths;
 
-public class FirstMissingPositive {
+public class _9FirstMissingPositive {
     public static void main(String[] args) {
         int nums [] = {3,4,-1,1};
         int n = nums.length;
