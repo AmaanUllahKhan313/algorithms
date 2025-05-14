@@ -1,9 +1,9 @@
 package com.algos8_strings;
 
-public class ConvertNumberToString {
+public class _4ConvertNumberToString {
 
     public static void main(String[] args) {
-        System.out.println(new ConvertNumberToString().numberToWords(1252));
+        System.out.println(new _4ConvertNumberToString().numberToWords(1252));
     }
 
     private final String[] belowTen = new String[] {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};

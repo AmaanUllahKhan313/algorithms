@@ -2,9 +2,9 @@ package com.algos8_strings;
 
 import java.util.HashMap;
 
-public class RemoveDuplicates {
+public class _2RemoveDuplicates {
     public static void main(String[] args) {
-        System.out.println(new RemoveDuplicates().removeDups("zvvogfg"));
+        System.out.println(new _2RemoveDuplicates().removeDups("zvvogfg"));
     }
 
     String removeDups(String S)

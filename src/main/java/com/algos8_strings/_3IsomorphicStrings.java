@@ -1,6 +1,6 @@
 package com.algos8_strings;
 
-public class IsomorphicStrings {
+public class _3IsomorphicStrings {
     public static void main(String[] args) {
         System.out.println(isIsomorphic("title","cycle"));
     }

@@ -2,7 +2,7 @@ package com.algos8_strings;
 
 import java.util.*;
 
-public class MostCommonWord {
+public class _1MostCommonWord {
     public static void main(String[] args) {
         System.out.println(mostCommonWord("hello all hello all hello I am back I am back back".split(" "),
                 new String[]{"hello"}));

@@ -1,6 +1,6 @@
 package com.algos8_strings;
 // number of characters and it's occurences should be same with/without following sequence
-public class ValidAnagram {
+public class _5ValidAnagram {
     public static void main(String[] args) {
         System.out.println(isAnagram("nitin","niitn"));
     }
