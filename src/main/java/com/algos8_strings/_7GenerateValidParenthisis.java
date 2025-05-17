@@ -2,9 +2,8 @@ package com.algos8_strings;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
-public class GenerateValidParenthisis {
+public class _7GenerateValidParenthisis {
     public static void main(String[] args) {
         List<String> list= new ArrayList<String>();
         generateValidParenthisis(0,0,3,"",list);

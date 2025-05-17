@@ -1,6 +1,6 @@
 package com.algos8_strings;
 
-public class InterleavingStrings {
+public class _8InterleavingStrings {
 
     public static void main(String[] args) {
         System.out.println(isInterleaved("XXY",0,"XXZ",0,"","XXZXXXY"));

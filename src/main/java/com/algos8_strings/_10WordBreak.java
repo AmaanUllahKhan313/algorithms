@@ -2,7 +2,7 @@ package com.algos8_strings;
 
 import java.util.*;
 
-public class WordBreak {
+public class _10WordBreak {
     private static Set<String> dictionary = new HashSet<>();
     public static void main(String[] args) {
         String temp_dictionary[] = {"mobile","samsung","sam","sung",
