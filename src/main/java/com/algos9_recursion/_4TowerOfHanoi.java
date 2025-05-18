@@ -1,6 +1,6 @@
 package com.algos9_recursion;
 
-public class TowerOfHanoi {
+public class _4TowerOfHanoi {
     public static void main(String[] args) {
         int n = 3;
 //        A --> C (transfer all plates from A to B rod)

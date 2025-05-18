@@ -1,9 +1,9 @@
 package com.algos9_recursion;
 
-public class NumberOfSubsets_Unique {
+public class _1NumberOfSubsets_Unique {
 
     public static void main(String[] args) {
-        String input = "ab";
+        String input = "abcd ";
         String output = "";
         printNumberOfSubset(input,output);
     }

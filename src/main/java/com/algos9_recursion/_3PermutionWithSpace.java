@@ -1,9 +1,9 @@
 package com.algos9_recursion;
 
-public class PermutationChangeCase {
+public class _3PermutionWithSpace {
     public static void main(String[] args) {
-        String input = "ab";
-        String output = "";
+        String input = "bc";
+        String output = "a";
         printNumberOfSubset(input,output);
     }
 
@@ -21,7 +21,7 @@ public class PermutationChangeCase {
             String right_substr = input.substring(i + 1);
             String rest = left_substr + right_substr;
             printNumberOfSubset(rest, output + ch);
-            printNumberOfSubset(rest, (output + (ch+"").toUpperCase()));
+            printNumberOfSubset(rest, output +"_"+ch);
         }
     }
 }
