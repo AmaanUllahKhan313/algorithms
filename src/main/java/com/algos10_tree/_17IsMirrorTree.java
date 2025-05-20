@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class MirrorTree {
+public class _17IsMirrorTree {
 
     static class Node{
         int data;

@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class AllPathsFromRootToAllLeafNodes {
+public class _3PrintPathsFromRootToAllLeafNodes {
     public static void preorder(_1BTree root){
         if(root == null) return;
         System.out.print(root.data+"\t");

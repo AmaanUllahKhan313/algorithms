@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class IsIdenticalTree {
+public class _16IsIdenticalTree {
     public static void main(String[] args) {
         _1BTree root = _1BTree.initializeTree();
         _1BTree root2 = _1BTree.initializeTree();

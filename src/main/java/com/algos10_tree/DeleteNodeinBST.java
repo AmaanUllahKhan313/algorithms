@@ -2,12 +2,7 @@ package com.algos10_tree;
 
 public class DeleteNodeinBST {
     public static void main(String[] args) {
-        _1BTree root = new _1BTree(3);
-        root.left = new _1BTree(2);
-        root.right = new _1BTree(5);
-        root.left.left = new _1BTree(1);
-        root.left.right = new _1BTree(4);
-        System.out.println(deleteNode(root,2));
+        System.out.println(deleteNode(_1BTree.initializeTree(),2));
     }
 
     private static _1BTree deleteNode(_1BTree root, int key) {

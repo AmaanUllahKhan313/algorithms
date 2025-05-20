@@ -2,14 +2,17 @@ package com.algos10_tree;
 
 import java.io.PrintStream;
 
-public class BinaryTreePrinter {
+public class PrintTreeVisualization {
 
     private _1BTree tree;
 
-    public BinaryTreePrinter(_1BTree tree) {
+    public PrintTreeVisualization(_1BTree tree) {
         this.tree = tree;
     }
 
+    public static void main(String[] args) {
+        System.out.println(new PrintTreeVisualization(_1BTree.initializeTree()).traversePreOrder());
+    }
     private String traversePreOrder() {
 
         if (tree == null) {

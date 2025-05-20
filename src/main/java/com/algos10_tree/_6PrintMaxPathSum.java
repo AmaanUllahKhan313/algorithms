@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class MaxPathSum {
+public class _6PrintMaxPathSum {
     private static int max =  Integer.MIN_VALUE;
     public static void main(String[] args) {
         System.out.println(maxPathSum(_1BTree.initializeTree()));

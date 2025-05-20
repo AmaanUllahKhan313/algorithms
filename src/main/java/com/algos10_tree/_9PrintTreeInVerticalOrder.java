@@ -2,23 +2,23 @@ package com.algos10_tree;
 
 import java.util.*;
 
-public class VerticalOrderTraverse {
+public class _9PrintTreeInVerticalOrder {
     static class QueueHelper
     {
-        Sibling.Node node;
+        _20CheckIfTwoNodesAreSibling.Node node;
         int level;
 
-        public QueueHelper(Sibling.Node node, int level) {
+        public QueueHelper(_20CheckIfTwoNodesAreSibling.Node node, int level) {
             this.node = node;
             this.level = level;
         }
     };
     public static void main(String[] args) {
-        Sibling.Node root = Sibling.getTree();
+        _20CheckIfTwoNodesAreSibling.Node root = _20CheckIfTwoNodesAreSibling.getTree();
         getVerticalOrderTraverse(root).values().stream().forEach(System.out::println);
     }
 
-    private static Map getVerticalOrderTraverse(Sibling.Node root) {
+    private static Map getVerticalOrderTraverse(_20CheckIfTwoNodesAreSibling.Node root) {
         Map<Integer, List<Integer>> map = new TreeMap<>();
         Queue<QueueHelper> queue = new LinkedList<>();
         queue.add(new QueueHelper(root,0));
@@ -26,7 +26,7 @@ public class VerticalOrderTraverse {
             int size=queue.size();
             for (int i = 0; i < size; i++) {
                 QueueHelper queueHelper = queue.poll();
-                Sibling.Node node = queueHelper.node;
+                _20CheckIfTwoNodesAreSibling.Node node = queueHelper.node;
                 int level = queueHelper.level;
                 if (map.containsKey(queueHelper.level)){
                     map.get(level).add(node.data);

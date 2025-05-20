@@ -2,7 +2,7 @@ package com.algos10_tree;
 
 
 
-public class Sibling {
+public class _20CheckIfTwoNodesAreSibling {
     static class Node
     {
         int data;

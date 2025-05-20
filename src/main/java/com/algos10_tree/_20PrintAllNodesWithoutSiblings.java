@@ -1,12 +1,12 @@
 package com.algos10_tree;
 
-public class NoSibling {
+public class _20PrintAllNodesWithoutSiblings {
     public static void main(String[] args){
-        Sibling.Node root = Sibling.getTree();
+        _20CheckIfTwoNodesAreSibling.Node root = _20CheckIfTwoNodesAreSibling.getTree();
         printAllNodesWithoutSiblings(root);
     }
 
-    private static Sibling.Node printAllNodesWithoutSiblings(Sibling.Node root) {
+    private static _20CheckIfTwoNodesAreSibling.Node printAllNodesWithoutSiblings(_20CheckIfTwoNodesAreSibling.Node root) {
         if (root == null)
             return root;
         if (root.left == null && root.right != null)

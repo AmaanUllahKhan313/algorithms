@@ -2,7 +2,7 @@ package com.algos10_tree;
 
 
 //AVL Tree
-public class BalancedBTree {
+public class _13IsTreeBalanced {
 
     public static void main(String[] args) {
         System.out.println(isAVLTree(_1BTree.initializeTree()));

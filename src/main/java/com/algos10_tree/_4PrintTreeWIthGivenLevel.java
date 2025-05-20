@@ -10,7 +10,7 @@ public class _4PrintTreeWIthGivenLevel {
     }
 
     public static void printAllLevelsOfTree(_1BTree root){
-        int height = _5HeightOfTree.getHeight(root);
+        int height = _10HeightOfTree.getHeight(root);
         for(int i=1;i<=height;i++){
             printGivenLevel(root, i);
         }

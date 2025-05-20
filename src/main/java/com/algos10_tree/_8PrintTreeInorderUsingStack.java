@@ -2,7 +2,7 @@ package com.algos10_tree;
 
 import java.util.Stack;
 
-public class InorderTraversalUsingStack {
+public class _8PrintTreeInorderUsingStack {
     public static void main(String[] args) {
         _1BTree root = _1BTree.initializeTree();
         Stack<_1BTree> stack = new Stack<>();

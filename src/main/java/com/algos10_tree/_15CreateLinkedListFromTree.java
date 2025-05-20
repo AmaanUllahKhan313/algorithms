@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class BSTToDLL {
+public class _15CreateLinkedListFromTree {
     static _1BTree head = null;
     static _1BTree tail = null;
     public static void main(String[] args) {

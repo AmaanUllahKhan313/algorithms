@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class AverageOfLevels {
+public class _6PrintAverageOfLevelsOfTree {
     public static void main(String[] args) {
         System.out.println(getAvgOfLevels(_1BTree.initializeTree()));
     }

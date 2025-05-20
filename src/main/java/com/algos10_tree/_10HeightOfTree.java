@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class _5HeightOfTree {
+public class _10HeightOfTree {
     public static void main(String[] args) {
         int height = getHeight(_1BTree.initializeTree());
         System.out.println("Height of the tree :"+height);
