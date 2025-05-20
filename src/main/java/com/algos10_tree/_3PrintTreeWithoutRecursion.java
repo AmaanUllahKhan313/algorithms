@@ -3,7 +3,7 @@ package com.algos10_tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class _1PrintTreeWithoutRecursion {
+public class _3PrintTreeWithoutRecursion {
     public static void main(String[] args) {
         printAllNodes(_1BTree.initializeTree());
     }

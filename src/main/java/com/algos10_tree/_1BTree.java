@@ -9,8 +9,6 @@ class _1BTree {
     }
     public static void main(String[] args) {
         _1BTree root = initializeTree();
-        _1BTree root2 = initializeTree2();
-        System.out.println(new HeghtOfTree().getTreeHeight(root));
     }
 
     public static _1BTree initializeTree() {

@@ -4,9 +4,9 @@ import java.io.PrintStream;
 
 public class BinaryTreePrinter {
 
-    private BinarySearchTree tree;
+    private _1BTree tree;
 
-    public BinaryTreePrinter(BinarySearchTree tree) {
+    public BinaryTreePrinter(_1BTree tree) {
         this.tree = tree;
     }
 
@@ -17,18 +17,18 @@ public class BinaryTreePrinter {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append(tree.getValue());
+        sb.append(tree.data);
 
         String pointerRight = "└──";
-        String pointerLeft = (tree.getRight() != null) ? "├──" : "└──";
+        String pointerLeft = (tree.right != null) ? "├──" : "└──";
 
-        traverseNodes(sb, "", pointerLeft, tree.getLeft(), tree.getRight() != null);
-        traverseNodes(sb, "", pointerRight, tree.getRight(), false);
+        traverseNodes(sb, "", pointerLeft, tree.left, tree.right != null);
+        traverseNodes(sb, "", pointerRight, tree.right, false);
 
         return sb.toString();
     }
 
-    private void traverseNodes(StringBuilder sb, String padding, String pointer, BinarySearchTree node,
+    private void traverseNodes(StringBuilder sb, String padding, String pointer, _1BTree node,
                                boolean hasRightSibling) {
 
         if (node != null) {
@@ -36,7 +36,7 @@ public class BinaryTreePrinter {
             sb.append("\n");
             sb.append(padding);
             sb.append(pointer);
-            sb.append(node.getValue());
+            sb.append(node.data);
 
             StringBuilder paddingBuilder = new StringBuilder(padding);
             if (hasRightSibling) {
@@ -47,10 +47,10 @@ public class BinaryTreePrinter {
 
             String paddingForBoth = paddingBuilder.toString();
             String pointerRight = "└──";
-            String pointerLeft = (node.getRight() != null) ? "├──" : "└──";
+            String pointerLeft = (node.right != null) ? "├──" : "└──";
 
-            traverseNodes(sb, paddingForBoth, pointerLeft, node.getLeft(), node.getRight() != null);
-            traverseNodes(sb, paddingForBoth, pointerRight, node.getRight(), false);
+            traverseNodes(sb, paddingForBoth, pointerLeft, node.left, node.right != null);
+            traverseNodes(sb, paddingForBoth, pointerRight, node.right, false);
 
         }
 
