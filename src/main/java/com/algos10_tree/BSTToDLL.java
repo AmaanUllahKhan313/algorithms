@@ -1,10 +1,10 @@
 package com.algos10_tree;
 
 public class BSTToDLL {
-    static BTree head = null;
-    static BTree tail = null;
+    static _1BTree head = null;
+    static _1BTree tail = null;
     public static void main(String[] args) {
-        BTree root = BTree.initializeTree();
+        _1BTree root = _1BTree.initializeTree();
         bstToDll(root);
         printDLL();
     }
@@ -14,7 +14,7 @@ public class BSTToDLL {
             head = head.right;
         }
     }
-    private static void bstToDll(BTree root) {
+    private static void bstToDll(_1BTree root) {
         if (root==null)
             return;
         bstToDll(root.left);

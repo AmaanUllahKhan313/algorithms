@@ -3,16 +3,16 @@ package com.algos10_tree;
 public class DiameterOfTree {
 
     public static void main(String[] args) {
-        BTree root = BTree.initializeTree();
+        _1BTree root = _1BTree.initializeTree();
         System.out.println(getDiameter(root));
     }
 
-    private static int getDiameter(BTree bTree) {
-        if(bTree==null)
+    private static int getDiameter(_1BTree a1BTree) {
+        if(a1BTree ==null)
             return 0;
-        int lheight = BTree.getTreeHeight(bTree.left);
-        int rheight = BTree.getTreeHeight(bTree.right);
-        return Math.max(+1+rheight+lheight,Math.max(getDiameter(bTree.left),getDiameter(bTree.right)));
+        int lheight = new HeghtOfTree().getTreeHeight(a1BTree.left);
+        int rheight = new HeghtOfTree().getTreeHeight(a1BTree.right);
+        return Math.max(+1+rheight+lheight,Math.max(getDiameter(a1BTree.left),getDiameter(a1BTree.right)));
 
     }
 }

@@ -2,9 +2,9 @@ package com.algos10_tree;
 
 public class MergeTwoTrees {
     public static void main(String[] args) {
-        System.out.println(mergeTrees(BTree.initializeTree(),BTree.initializeTree2()));
+        System.out.println(mergeTrees(_1BTree.initializeTree(), _1BTree.initializeTree2()));
     }
-    public static BTree mergeTrees(BTree root1, BTree root2) {
+    public static _1BTree mergeTrees(_1BTree root1, _1BTree root2) {
         if (root1 != null & root2 != null) root1.data = root1.data+root2.data;
         if(root1 == null) return root2;
         if(root2 == null) return root1;

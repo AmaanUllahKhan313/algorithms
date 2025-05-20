@@ -2,14 +2,14 @@ package com.algos10_tree;
 
 public class ValidateBST {
     public static void main(String[] args) {
-        BTree root = new BTree(3);
-        root.left = new BTree(2);
-        root.right = new BTree(5);
-        root.left.left = new BTree(1);
-        root.left.right = new BTree(4);
+        _1BTree root = new _1BTree(3);
+        root.left = new _1BTree(2);
+        root.right = new _1BTree(5);
+        root.left.left = new _1BTree(1);
+        root.left.right = new _1BTree(4);
         System.out.println(new ValidateBST().isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE));
     }
-    public boolean isValidBST(BTree root, long min, long max) {
+    public boolean isValidBST(_1BTree root, long min, long max) {
         if (root==null)
             return true;
         if (root.data <= min || root.data >= max)

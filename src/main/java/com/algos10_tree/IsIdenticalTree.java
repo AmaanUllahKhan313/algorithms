@@ -2,11 +2,11 @@ package com.algos10_tree;
 
 public class IsIdenticalTree {
     public static void main(String[] args) {
-        BTree root = BTree.initializeTree();
-        BTree root2 = BTree.initializeTree();
+        _1BTree root = _1BTree.initializeTree();
+        _1BTree root2 = _1BTree.initializeTree();
         System.out.println(isIdentical(root,root2));
     }
-    public static boolean isIdentical(BTree root1, BTree root2){
+    public static boolean isIdentical(_1BTree root1, _1BTree root2){
         if(root1==null && root2 ==null)
             return true;
         else

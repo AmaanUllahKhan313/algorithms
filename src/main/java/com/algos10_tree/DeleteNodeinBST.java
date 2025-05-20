@@ -2,15 +2,15 @@ package com.algos10_tree;
 
 public class DeleteNodeinBST {
     public static void main(String[] args) {
-        BTree root = new BTree(3);
-        root.left = new BTree(2);
-        root.right = new BTree(5);
-        root.left.left = new BTree(1);
-        root.left.right = new BTree(4);
+        _1BTree root = new _1BTree(3);
+        root.left = new _1BTree(2);
+        root.right = new _1BTree(5);
+        root.left.left = new _1BTree(1);
+        root.left.right = new _1BTree(4);
         System.out.println(deleteNode(root,2));
     }
 
-    private static BTree deleteNode(BTree root, int key) {
+    private static _1BTree deleteNode(_1BTree root, int key) {
         if(root == null){
             return null;
         }
@@ -25,13 +25,13 @@ public class DeleteNodeinBST {
                 return root.left;
             }
 
-            BTree minNode = findMin(root.right);
+            _1BTree minNode = findMin(root.right);
             root.data = minNode.data;
             root.right = deleteNode(root.right, root.data);
         }
         return root;
     }
-    private static BTree findMin(BTree node){
+    private static _1BTree findMin(_1BTree node){
         while(node.left != null){
             node = node.left;
         }

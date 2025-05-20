@@ -2,7 +2,7 @@ package com.algos10_tree;
 
 import java.util.Arrays;
 
-public class CreateBST {
+public class _2CreateBST {
     public static void main(String[] args) {
         int ints [] =  {2, 1, 3, 4};
         Arrays.sort(ints);

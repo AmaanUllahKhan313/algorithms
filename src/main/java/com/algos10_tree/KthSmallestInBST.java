@@ -2,9 +2,9 @@ package com.algos10_tree;
 
 public class KthSmallestInBST {
     public static void main(String[] args) {
-        System.out.println(kthSmallest(BTree.initializeTree(),3));
+        System.out.println(kthSmallest(_1BTree.initializeTree(),3));
     }
-    public static int kthSmallest(BTree root, int k) {
+    public static int kthSmallest(_1BTree root, int k) {
         int count = countNodes(root.left);
         if (k <= count) {
             return kthSmallest(root.left, k);
@@ -15,7 +15,7 @@ public class KthSmallestInBST {
         return root.data;
     }
 
-    public static int countNodes(BTree n) {
+    public static int countNodes(_1BTree n) {
         if (n == null) return 0;
 
         return 1 + countNodes(n.left) + countNodes(n.right);

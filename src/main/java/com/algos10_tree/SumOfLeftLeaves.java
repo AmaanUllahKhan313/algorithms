@@ -2,10 +2,10 @@ package com.algos10_tree;
 
 public class SumOfLeftLeaves {
     public static void main(String[] args) {
-        System.out.println(getSumOfLeftLeaves(BTree.initializeTree()));
+        System.out.println(getSumOfLeftLeaves(_1BTree.initializeTree()));
     }
 
-    private static int getSumOfLeftLeaves(BTree root) {
+    private static int getSumOfLeftLeaves(_1BTree root) {
         int ans = 0;
         if(root ==null) return 0;
         if(root.left!=null){
