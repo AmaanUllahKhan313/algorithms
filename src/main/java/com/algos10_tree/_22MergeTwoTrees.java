@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class MergeTwoTrees {
+public class _22MergeTwoTrees {
     public static void main(String[] args) {
         System.out.println(mergeTrees(_1BTree.initializeTree(), _1BTree.initializeTree2()));
     }

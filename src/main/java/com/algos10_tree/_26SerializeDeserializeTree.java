@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class SerializeDeserializeTree {
+public class _26SerializeDeserializeTree {
 
     public static void main(String[] args) {
         System.out.println(serialize(deserialize(serialize(_1BTree.initializeTree()))));

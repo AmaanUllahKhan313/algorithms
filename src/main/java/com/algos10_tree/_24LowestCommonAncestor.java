@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class LowestCommonAncestor {
+public class _24LowestCommonAncestor {
     public static void main(String[] args) {
         _1BTree root = _1BTree.initializeTree();
         System.out.println(lowestCommonAncestor(root,root.left,root.right).data);

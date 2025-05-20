@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class InsertNodeInBST {
+public class _22InsertNodeInBST {
     public static void main(String[] args) {
         _1BTree root = new _1BTree(6);
         root.left = new _1BTree(4);

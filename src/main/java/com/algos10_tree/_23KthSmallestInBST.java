@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class KthSmallestInBST {
+public class _23KthSmallestInBST {
     public static void main(String[] args) {
         System.out.println(kthSmallest(_1BTree.initializeTree(),3));
     }

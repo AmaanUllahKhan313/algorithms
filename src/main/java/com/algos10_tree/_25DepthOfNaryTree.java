@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class DepthOfNaryTree {
+public class _25DepthOfNaryTree {
     static class Node {
         public int val;
         public List<Node> children;

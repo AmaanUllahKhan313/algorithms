@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class SwappingToMirrorTree {
+public class _17SwappingToMirrorTree {
 
     public static void main(String[] args) {
         _17IsMirrorTree.Node node = new _17IsMirrorTree.Node(1);

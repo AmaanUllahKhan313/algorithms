@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class DeleteNodeinBST {
+public class _22DeleteNodeinBST {
     public static void main(String[] args) {
         System.out.println(deleteNode(_1BTree.initializeTree(),2));
     }

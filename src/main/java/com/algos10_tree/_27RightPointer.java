@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class RightPointer {
+public class _27RightPointer {
     static class Node {
         public int val;
         public Node left;
@@ -26,7 +26,7 @@ public class RightPointer {
 
     }
     public static void main(String[] args) {
-        RightPointer.inorder(connect(RightPointer.initializeTree2()));
+        _27RightPointer.inorder(connect(_27RightPointer.initializeTree2()));
     }
     public static void inorder(Node root){
         if(root == null) return;

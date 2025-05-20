@@ -1,6 +1,6 @@
 package com.algos10_tree;
 
-public class SumOfLeftLeaves {
+public class _6PrintSumOfLeftLeaves {
     public static void main(String[] args) {
         System.out.println(getSumOfLeftLeaves(_1BTree.initializeTree()));
     }
