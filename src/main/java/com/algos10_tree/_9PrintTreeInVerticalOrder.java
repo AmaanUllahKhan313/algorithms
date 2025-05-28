@@ -5,20 +5,20 @@ import java.util.*;
 public class _9PrintTreeInVerticalOrder {
     static class QueueHelper
     {
-        _20CheckIfTwoNodesAreSibling.Node node;
+        _1BTree node;
         int level;
 
-        public QueueHelper(_20CheckIfTwoNodesAreSibling.Node node, int level) {
+        public QueueHelper(_1BTree node, int level) {
             this.node = node;
             this.level = level;
         }
     };
     public static void main(String[] args) {
-        _20CheckIfTwoNodesAreSibling.Node root = _20CheckIfTwoNodesAreSibling.getTree();
+        _1BTree root = _1BTree.initializeTree();
         getVerticalOrderTraverse(root).values().stream().forEach(System.out::println);
     }
 
-    private static Map getVerticalOrderTraverse(_20CheckIfTwoNodesAreSibling.Node root) {
+    private static Map getVerticalOrderTraverse(_1BTree root) {
         Map<Integer, List<Integer>> map = new TreeMap<>();
         Queue<QueueHelper> queue = new LinkedList<>();
         queue.add(new QueueHelper(root,0));
@@ -26,7 +26,7 @@ public class _9PrintTreeInVerticalOrder {
             int size=queue.size();
             for (int i = 0; i < size; i++) {
                 QueueHelper queueHelper = queue.poll();
-                _20CheckIfTwoNodesAreSibling.Node node = queueHelper.node;
+                _1BTree node = queueHelper.node;
                 int level = queueHelper.level;
                 if (map.containsKey(queueHelper.level)){
                     map.get(level).add(node.data);
