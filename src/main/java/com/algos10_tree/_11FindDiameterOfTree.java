@@ -7,12 +7,12 @@ public class _11FindDiameterOfTree {
         System.out.println(getDiameter(root));
     }
 
-    private static int getDiameter(_1BTree a1BTree) {
-        if(a1BTree ==null)
+    private static int getDiameter(_1BTree root) {
+        if(root ==null)
             return 0;
-        int lheight = new _10HeightOfTree().getTreeHeight(a1BTree.left);
-        int rheight = new _10HeightOfTree().getTreeHeight(a1BTree.right);
-        return Math.max(+1+rheight+lheight,Math.max(getDiameter(a1BTree.left),getDiameter(a1BTree.right)));
+        int lheight = new _10HeightOfTree().getTreeHeight(root.left);
+        int rheight = new _10HeightOfTree().getTreeHeight(root.right);
+        return Math.max(+1+rheight+lheight,Math.max(getDiameter(root.left),getDiameter(root.right)));
 
     }
 }
