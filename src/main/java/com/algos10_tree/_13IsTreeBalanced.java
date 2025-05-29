@@ -10,13 +10,7 @@ public class _13IsTreeBalanced {
 
     private static boolean isAVLTree(_1BTree root) {
         if(root == null) return true;
-        return Math.abs(getHeight(root.left)
-                - getHeight(root.right))<=1;
-    }
-    static int getHeight(_1BTree root) {
-        if(root == null)return 0;
-        int leftHeight = getHeight(root.left);
-        int rightHeight = getHeight(root.right);
-        return 1+Math.max(leftHeight,rightHeight);
+        return Math.abs(_10HeightOfTree.getHeight(root.left)
+                - _10HeightOfTree.getHeight(root.right))<=1;
     }
 }
