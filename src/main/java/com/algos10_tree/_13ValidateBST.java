@@ -2,11 +2,7 @@ package com.algos10_tree;
 
 public class _13ValidateBST {
     public static void main(String[] args) {
-        _1BTree root = new _1BTree(3);
-        root.left = new _1BTree(2);
-        root.right = new _1BTree(5);
-        root.left.left = new _1BTree(1);
-        root.left.right = new _1BTree(4);
+        _1BTree root = _1BTree.initializeTree();
         System.out.println(new _13ValidateBST().isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE));
     }
     public boolean isValidBST(_1BTree root, long min, long max) {
