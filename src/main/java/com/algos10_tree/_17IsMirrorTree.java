@@ -7,11 +7,11 @@ public class _17IsMirrorTree {
         System.out.println(isMirrorTree(root.left,root.right));
     }
 
-    private static boolean isMirrorTree(_1BTree left, _1BTree right) {
-        if(left==null && right==null)
+    private static boolean isMirrorTree(_1BTree root1, _1BTree root2) {
+        if(root1==null && root2==null)
             return true;
-        return (left.data==right.data)
-                && isMirrorTree(left.left,right.right)
-                && isMirrorTree(left.right,right.left);
+        return (root1.data==root2.data)
+                && isMirrorTree(root1.left,root2.right)
+                && isMirrorTree(root1.right,root2.left);
     }
 }
