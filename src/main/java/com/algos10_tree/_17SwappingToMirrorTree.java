@@ -3,7 +3,7 @@ package com.algos10_tree;
 public class _17SwappingToMirrorTree {
 
     public static void main(String[] args) {
-        _1BTree node = new _1BTree(1);
+        _1BTree node = _1BTree.initializeTree();
         swapToMirrorTree(node);
     }
 
