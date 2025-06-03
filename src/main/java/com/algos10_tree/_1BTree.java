@@ -39,4 +39,14 @@ class _1BTree {
         root.right.right = new _1BTree(7);
         return root;
     }
+    public static _1BTree createMirrorTrees() {
+        _1BTree root = new _1BTree(1);
+        root.left = new _1BTree(2);
+        root.right = new _1BTree(2);
+        root.left.left = new _1BTree(3);
+        root.left.right = new _1BTree(4);
+        root.right.left = new _1BTree(4);
+        root.right.right = new _1BTree(3);
+        return root;
+    }
 }
