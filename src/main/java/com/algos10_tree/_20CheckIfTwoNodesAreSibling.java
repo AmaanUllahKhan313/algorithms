@@ -1,54 +1,45 @@
 package com.algos10_tree;
 
 
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class _20CheckIfTwoNodesAreSibling {
-    static class Node
-    {
-        int data;
-        Node left, right;
-    };
-    static Node newNode(int data)
-    {
-        Node node = new Node();
-        node.data = data;
-        node.left = node.right = null;
-
-        return (node);
+    public static void main(String[] args) {
+        _1BTree root = _1BTree.initializeTree();
+        System.out.print(isCousins(root,2,3));
     }
-    static Node root = null;
-    static Node CheckIfNodesAreSiblings(Node root,int data_one){
-        if (root == null)
-            return root;
-        if (root.left != null && root.right != null){
-            if (root.left.data == data_one )
-                return root.right;
-            if (root.right.data == data_one )
-                return root.left;
+    public static boolean isCousins(_1BTree root, int x, int y) {
+        if (root == null) return false;
+        Queue<_1BTree> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            boolean foundX = false, foundY = false;
+            for (int i = 0; i < size; i++) {
+                _1BTree current = queue.poll();
+                if (current.left != null && current.right != null) {
+                    if ((current.left.data == x && current.right.data == y) ||
+                            (current.left.data == y && current.right.data == x)) {
+                        return false;
+                    }
+                }
+                if (current.left != null) {
+                    queue.add(current.left);
+                    if (current.left.data == x) foundX = true;
+                    if (current.left.data == y) foundY = true;
+                }
+                if (current.right != null) {
+                    queue.add(current.right);
+                    if (current.right.data == x) foundX = true;
+                    if (current.right.data == y) foundY = true;
+                }
+            }
+            if (foundX && foundY) return true;
+            if (foundX || foundY) return false;
         }
-        if (root.left != null)
-            CheckIfNodesAreSiblings(root.left,data_one);
-        if (root.right != null)
-            CheckIfNodesAreSiblings(root.right,data_one);
-        return root;
+        return false;
     }
-    public static void main(String[] args)
-    {
-        root = getTree();
-        int data_one = 2;
-        System.out.print(CheckIfNodesAreSiblings(root,
-                data_one
-        ).data);
-    }
-    public static Node getTree(){
-        root = newNode(1);
-        root.left = newNode(2);
-        root.right = newNode(3);
-        root.left.left = newNode(4);
-        root.right.left = newNode(5);
-       // root.right.right = newNode(6);
-        root.left.left.right = newNode(7);
-        return root;
-    }
+
 }
 
