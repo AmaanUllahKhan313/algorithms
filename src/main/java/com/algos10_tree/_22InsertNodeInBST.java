@@ -2,12 +2,7 @@ package com.algos10_tree;
 
 public class _22InsertNodeInBST {
     public static void main(String[] args) {
-        _1BTree root = new _1BTree(6);
-        root.left = new _1BTree(4);
-        root.right = new _1BTree(7);
-        root.left.left = new _1BTree(3);
-        root.left.right = new _1BTree(5);
-        insertNodeInBST(root,1);
+        insertNodeInBST(_1BTree.initializeTree(),1);
     }
 
     private static _1BTree insertNodeInBST(_1BTree root, int value) {
