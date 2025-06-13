@@ -13,7 +13,7 @@ public class _32PrintTreeVisualization {
     public static void main(String[] args) {
         System.out.println(new _32PrintTreeVisualization(_1BTree.initializeTree()).traversePreOrder());
     }
-    private String traversePreOrder() {
+    String traversePreOrder() {
 
         if (tree == null) {
             return "";
