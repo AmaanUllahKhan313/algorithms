@@ -9,7 +9,7 @@ public class _23KthSmallestInBST {
         if (k <= count) {
             return kthSmallest(root.left, k);
         } else if (k > count + 1) {
-            return kthSmallest(root.right, k-1-count); // 1 is counted as current node
+            return kthSmallest(root.right, k-1-count); // 1 is counted as current nod-e
         }
 
         return root.data;

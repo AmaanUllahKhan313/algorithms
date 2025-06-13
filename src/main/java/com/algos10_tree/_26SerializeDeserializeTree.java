@@ -10,7 +10,7 @@ public class _26SerializeDeserializeTree {
         System.out.println(serialize(deserialize(serialize(_1BTree.initializeTree()))));
     }
     private static String serialize(_1BTree root) {
-        if (root == null) return "#";
+        if (root == null) return "null";
         return root.data + "," + serialize(root.left) + "," + serialize(root.right);
     }
     private static _1BTree deserialize(String data) {
@@ -19,7 +19,7 @@ public class _26SerializeDeserializeTree {
     }
     private static _1BTree helper(Queue<String> queue) {
         String s = queue.poll();
-        if (s.equals("#")) return null;
+        if (s.equals("null")) return null;
         _1BTree root = new _1BTree(Integer.valueOf(s));
         root.left = helper(queue);
         root.right = helper(queue);
