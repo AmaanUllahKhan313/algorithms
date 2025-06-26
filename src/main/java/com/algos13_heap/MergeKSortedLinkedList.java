@@ -1,6 +1,6 @@
 package com.algos13_heap;
 
-import com.algos2_linkedlist.ListNode;
+import com.algos02_linkedlist.ListNode;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
