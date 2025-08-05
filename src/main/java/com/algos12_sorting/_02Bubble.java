@@ -1,6 +1,6 @@
 package com.algos12_sorting;
 
-public class Bubble {
+public class _02Bubble {
     static void sort(int[] a){
         int count =0;
         for(int i=0;i<a.length;i++)

@@ -2,7 +2,7 @@ package com.algos12_sorting;
 
 import java.util.stream.IntStream;
 
-public class MergeSort {
+public class _04MergeSort {
     public static void main(String[] args) {
         int arr [] = {4, 9, 1, 2, 3, 7};
         System.out.println("Before sort: ");

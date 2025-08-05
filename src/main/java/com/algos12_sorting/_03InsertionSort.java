@@ -2,7 +2,7 @@ package com.algos12_sorting;
 
 import java.util.stream.IntStream;
 
-public class InsertionSort {
+public class _03InsertionSort {
     public static void main(String args[]){
         int [] ints = new int []{ 12, 11, 13, 5, 6 };
         insertionSort(ints);
