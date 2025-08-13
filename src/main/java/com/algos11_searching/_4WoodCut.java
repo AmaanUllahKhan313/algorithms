@@ -2,7 +2,7 @@ package com.algos11_searching;
 
 import java.util.Arrays;
 
-public class WoodCut {
+public class _4WoodCut {
     public static void main(String[] args) {
         System.out.println(cutWood(new int[]{1, 2, 1, 2},2));
     }

@@ -1,4 +1,4 @@
-package com.algos11_searching;
+package com.algos14_designs;
 
 public class MIssingNumberFromSecondArray {
     public static void main(String[] args) {

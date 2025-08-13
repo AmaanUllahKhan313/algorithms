@@ -1,6 +1,6 @@
 package com.algos11_searching;
 
-public class BinarySearch {
+public class _1BinarySearch {
     public static void main(String[] args) {
         int[] a = {1,2,3,4,5,6,7};
         System.out.println("Found:"+binarySearch(a,2)[1]);
