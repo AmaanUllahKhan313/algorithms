@@ -2,7 +2,7 @@ package com.algos12_sorting;
 
 import java.util.stream.IntStream;
 
-public class QuickSort {
+public class _05QuickSort {
     public static void main(String args[]){
         IntStream.of(quickSort(new int []{ 12, 11, 13, 5, 6 },0,4)).forEach(System.out::println);
     }

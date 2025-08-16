@@ -2,7 +2,7 @@ package com.algos12_sorting;
 
 import java.util.Comparator;
 
-public class SortUsingComparator {
+public class _06SortUsingComparator {
 }
 
 class Employee{
