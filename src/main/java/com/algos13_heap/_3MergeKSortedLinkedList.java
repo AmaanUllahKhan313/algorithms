@@ -5,7 +5,7 @@ import com.algos02_linkedlist.ListNode;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class MergeKSortedLinkedList {
+public class _3MergeKSortedLinkedList {
     public static void main(String[] args) {
         ListNode[] lists = new ListNode[3];
         for (int i = 0; i < 3; i++) {

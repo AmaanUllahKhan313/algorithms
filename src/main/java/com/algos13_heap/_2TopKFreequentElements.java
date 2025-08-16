@@ -2,7 +2,7 @@ package com.algos13_heap;
 
 import java.util.*;
 
-public class TopKFreequentElements {
+public class _2TopKFreequentElements {
     public static void main(String[] args) {
         System.out.println(topKFrequent(new int[]{1, 1, 1, 2, 2, 3}, 2));
     }
