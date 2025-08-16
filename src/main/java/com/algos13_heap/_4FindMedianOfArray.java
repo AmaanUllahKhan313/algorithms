@@ -3,11 +3,11 @@ package com.algos13_heap;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class Median {
+public class _4FindMedianOfArray {
     private PriorityQueue<Integer> maxHeap;
     private PriorityQueue<Integer> minHeap;
     private boolean even;
-    public Median() {
+    public _4FindMedianOfArray() {
         this.maxHeap = new PriorityQueue<>();
         this.minHeap = new PriorityQueue<>(Collections.reverseOrder());
         even = true;
@@ -30,7 +30,7 @@ public class Median {
 
     public static void main(String[] args) {
         int nums[] = {2,3,4,5,6,7,8};
-        Median median = new Median();
+        _4FindMedianOfArray median = new _4FindMedianOfArray();
         for (int num:nums) {
             median.add(num);
         }
