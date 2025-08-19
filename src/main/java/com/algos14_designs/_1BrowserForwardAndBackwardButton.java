@@ -1,49 +1,30 @@
 package com.algos14_designs;
 
-public class BrowserForwardAndBackwardButton {
+public class _1BrowserForwardAndBackwardButton {
     static Urls urls = null;
     static class Urls {
         private String value;
         private Urls next;
         private Urls previous;
-
         public String getValue() {
             return value;
         }
-
         public void setValue(String value) {
             this.value = value;
         }
-
         public Urls getNext() {
             return next;
         }
-
         public void setNext(Urls next) {
             this.next = next;
         }
-
         public Urls getPrevious() {
             return previous;
         }
-
         public void setPrevious(Urls previous) {
             this.previous = previous;
         }
     }
-    public static void main(String[] args) {
-        String input = "Google.com";
-        System.out.println(addingAndNewUrl(input).getValue());
-        // System.out.println(onClickBackword().getValue());
-        System.out.println(addingAndNewUrl("yahoo").getValue());
-        System.out.println(addingAndNewUrl("amazon").getValue());
-        System.out.println(addingAndNewUrl("flipkart").getValue());
-        System.out.println(onClickBackword().getValue());
-        System.out.println(addingAndNewUrl("microsoft").getValue());
-        System.out.println(onClickBackword().getValue());
-        System.out.println(onClickforward().getValue());
-    }
-    // A--> B--> C--> D
     public static Urls addingAndNewUrl(String string){
         if(null==urls) {
             urls = new Urls();
@@ -77,5 +58,17 @@ public class BrowserForwardAndBackwardButton {
         }
         return urls;
     }
-}
 
+    public static void main(String[] args) {
+        String input = "Google.com";
+        System.out.println(addingAndNewUrl(input).getValue());
+        //System.out.println(onClickBackword().getValue());
+        System.out.println(addingAndNewUrl("yahoo").getValue());
+        System.out.println(addingAndNewUrl("amazon").getValue());
+        System.out.println(addingAndNewUrl("flipkart").getValue());
+        System.out.println(onClickBackword().getValue());
+        System.out.println(addingAndNewUrl("microsoft").getValue());
+        System.out.println(onClickBackword().getValue());
+        System.out.println(onClickforward().getValue());
+    }
+}
