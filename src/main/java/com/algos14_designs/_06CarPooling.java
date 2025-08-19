@@ -1,6 +1,6 @@
 package com.algos14_designs;
 
-public class CarPooling {
+public class _06CarPooling {
     public static void main(String[] args) {
         int [][] startStopEndStopPassengerCount = new int[][]{{2,1,5},{3,3,7}};
         int carCapacity = 5;

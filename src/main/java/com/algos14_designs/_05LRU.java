@@ -3,12 +3,12 @@ package com.algos14_designs;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LRU {
+public class _05LRU {
     Map<Integer,Node> lookup = new HashMap<>();
     int capacity;
     Node head;
     Node tail;
-    public LRU(int capacity) {
+    public _05LRU(int capacity) {
         this.lookup = new HashMap<>(capacity);
         this.capacity = capacity;
         this.head = new Node(-1,-1,null,null);
@@ -61,7 +61,7 @@ public class LRU {
         head_next.prev=node;
     }
     public static void main(String[] args) {
-        LRU lruCache = new LRU(2);
+        _05LRU lruCache = new _05LRU(2);
         lruCache.putToCache(1,1);
         lruCache.putToCache(2,2);
         System.out.println(lruCache.getFromCache(1));

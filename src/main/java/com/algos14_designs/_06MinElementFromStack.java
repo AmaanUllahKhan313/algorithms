@@ -1,11 +1,11 @@
 package com.algos14_designs;
 
-public class MinElementFromStack {
+public class _06MinElementFromStack {
     int minElement;
     int [] stack;
     int top = -1;
 
-    public MinElementFromStack(int size) {
+    public _06MinElementFromStack(int size) {
         stack = new int[size];
     }
     int getMinElementFromStack() {
@@ -43,7 +43,7 @@ public class MinElementFromStack {
     }
 
     public static void main(String[] args) {
-        MinElementFromStack s = new MinElementFromStack(5);
+        _06MinElementFromStack s = new _06MinElementFromStack(5);
         s.push(3);
         s.push(5);
         System.out.println(s.getMinElementFromStack());

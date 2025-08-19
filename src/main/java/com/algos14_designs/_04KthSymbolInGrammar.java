@@ -1,6 +1,6 @@
 package com.algos14_designs;
 
-public class KthSymbolInGrammar {
+public class _04KthSymbolInGrammar {
     public static void main(String[] args) {
                                 /*
                                 0
