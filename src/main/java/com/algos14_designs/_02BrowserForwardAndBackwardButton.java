@@ -1,6 +1,6 @@
 package com.algos14_designs;
 
-public class _1BrowserForwardAndBackwardButton {
+public class _02BrowserForwardAndBackwardButton {
     static Urls urls = null;
     static class Urls {
         private String value;
