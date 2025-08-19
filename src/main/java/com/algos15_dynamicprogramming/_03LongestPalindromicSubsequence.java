@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class LongestPalindromicSubsequence {
+public class _03LongestPalindromicSubsequence {
     public static void main(String[] args) {
         String s = "agbcbfea"; //lcs : abcba
         int length = getLongestPalindromicSubsequence(s);
@@ -8,7 +8,7 @@ public class LongestPalindromicSubsequence {
     }
 
     public static int getLongestPalindromicSubsequence(String s) {
-        return LongestCommonSubsequence.getLongestCommonSubsequenceCount(s,s.length(),new StringBuilder(s).reverse()
+        return _01LongestCommonSubsequence.getLongestCommonSubsequenceCount(s,s.length(),new StringBuilder(s).reverse()
                 .toString(),s.length());
     }
 }

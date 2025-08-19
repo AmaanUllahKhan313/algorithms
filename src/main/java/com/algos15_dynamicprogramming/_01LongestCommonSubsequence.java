@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class LongestCommonSubsequence {
+public class _01LongestCommonSubsequence {
     public static void main(String[] args) {
         String str1 = "abc";
         String str2 = "forabfffcgx";
@@ -46,7 +46,7 @@ public class LongestCommonSubsequence {
         return t ;
     }
     public static String getLongestCommonSubsequenceString(String s1, int m, String s2, int n) {
-        int[][] t = LongestCommonSubsequence.getLongestCommonSubsequenceMatrix(s1,  m,  s2,  n);
+        int[][] t = _01LongestCommonSubsequence.getLongestCommonSubsequenceMatrix(s1,  m,  s2,  n);
         String ret_str = "";
         int i=m,j=n;
         int element = t[m][n];

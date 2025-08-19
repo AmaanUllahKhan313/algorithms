@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class LongestCommonSubstring {
+public class _02LongestCommonSubstring {
     public static void main(String[] args) {
         String s1 = "abcdghm";
         String s2 = "abedfghmr";

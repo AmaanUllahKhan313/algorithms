@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class EditDistanceToMatchStrings {
+public class _07EditDistanceToMatchStrings {
     public static void main(String[] args) {
         String str1 = "Saturday";
         String str2 = "Sunday";

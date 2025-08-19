@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class LongestRepeatingSubsequence {
+public class _05LongestRepeatingSubsequence {
     public static void main(String[] args) {
         String s = "AABCBEDD";
         int count = getLongestRepeatingSubsequenceCount(s);

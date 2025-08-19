@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class ShortestCommonSuperSequence {
+public class _04ShortestCommonSuperSequence {
     public static void main(String[] args) {
         //        String s1 = "AGGTAB";
         //        String s2 = "GXTXAYB";
@@ -12,12 +12,12 @@ public class ShortestCommonSuperSequence {
 
     private static int getShortestCommonSuperSequence
             (String s1, int m, String s2, int n) {
-        return m+n-LongestCommonSubsequence.getLongestCommonSubsequenceCount(s1,
+        return m+n-_01LongestCommonSubsequence.getLongestCommonSubsequenceCount(s1,
                 s1.length(),s2,s2.length());
     }
 
     public static String printShortestCommonSupersequence(String s1,int m,String s2, int n) {
-        int[][] t = LongestCommonSubsequence.getLongestCommonSubsequenceMatrix(s1,  m,  s2,  n);
+        int[][] t = _01LongestCommonSubsequence.getLongestCommonSubsequenceMatrix(s1,  m,  s2,  n);
         String ret_str = "";
         int i=m,j=n;
         while(i>0 ||j>0){

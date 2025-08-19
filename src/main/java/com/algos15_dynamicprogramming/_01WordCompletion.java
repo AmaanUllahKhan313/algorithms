@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class WordCompletion {
+public class _01WordCompletion {
     public static void main(String[] args) {
         System.out.println(canComplete("butl","beautiful"));
     }

@@ -3,7 +3,7 @@ package com.algos15_dynamicprogramming;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-public class LongestIncreasingSubsequence {
+public class _08LongestIncreasingSubsequence {
     public static void main(String[] args) {
         System.out.println(getLIS(new int [] {10, 22, 9, 33, 21, 50, 41, 60}));
     }

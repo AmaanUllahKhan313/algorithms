@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class PalindromePartition {
+public class _06PalindromePartition {
     public static void main(String[] args) {
         String input = "ababbbabbababa";
         System.out.println(getMinPalindromePartition(input,0,input.length()-1));
