@@ -4,7 +4,6 @@ public class _06MinElementFromStack {
     int minElement;
     int [] stack;
     int top = -1;
-
     public _06MinElementFromStack(int size) {
         stack = new int[size];
     }
@@ -29,7 +28,6 @@ public class _06MinElementFromStack {
             minElement=newElement;
         } else
             stack[++top] = newElement;
-
     }
     int pop(){
         if (top == -1)
