@@ -9,7 +9,8 @@ public class _02LongestCommonSubstring {
     }
 
     public static int getLongestCommonSubstring(String s1, String s2,
-                                                 int n, int m) {
+                                                int n, int m) {
+        int max =0;
         int[][] t = new int[n+1][m+1];
         for(int i=1;i<=n;i++){
             for(int j = 1;j<=m;j++){
@@ -18,12 +19,12 @@ public class _02LongestCommonSubstring {
                 }else{
                     t[i][j] =0;
                 }
+                max=Math.max(max,t[i][j]);
             }
         }
-        int max =0;
-         for(int i =0;i<=n;i++){
+        for(int i =0;i<=n;i++){
             for(int j=0;j<=m;j++){
-                if(t[i][j]>max)max=t[i][j];
+                max=Math.max(max,t[i][j]);
             }
         }
         return max;
