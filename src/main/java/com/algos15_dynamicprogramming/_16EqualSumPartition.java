@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class EqualSumPartition {
+public class _16EqualSumPartition {
     public static void main(String[] args) {
         System.out.println(getEqualSumPartition(new int []{1,5,11,5}));
     }

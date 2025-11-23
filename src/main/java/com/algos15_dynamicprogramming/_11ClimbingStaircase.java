@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class ClimbingStaircase {
+public class _11ClimbingStaircase {
     public static void main(String[] args) {
         int stairCase  = 5;
         System.out.println(climbStairs(stairCase));

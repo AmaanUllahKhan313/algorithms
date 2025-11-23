@@ -2,7 +2,7 @@ package com.algos15_dynamicprogramming;
 
 import java.util.Arrays;
 
-public class MxSumDivByThree {
+public class _24MxSumDivByThree {
     public static void main(String[] args) {
         System.out.println(maxSumDivThree(new int [] {3,6,5,1,8}));
     }

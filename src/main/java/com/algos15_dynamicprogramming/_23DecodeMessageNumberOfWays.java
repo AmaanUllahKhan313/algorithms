@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class DecodeMessageNumberOfWays {
+public class _23DecodeMessageNumberOfWays {
 
     public static void main(String[] args) {
        /*

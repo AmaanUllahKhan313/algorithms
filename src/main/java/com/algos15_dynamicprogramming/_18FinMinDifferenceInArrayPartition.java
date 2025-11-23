@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class FinMinDifferenceInArrayPartition {
+public class _18FinMinDifferenceInArrayPartition {
 
     public static void main(String[] args) {
         int [] a = {5,12,0,1};

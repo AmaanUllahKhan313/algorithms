@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class MinBooksFromAllBoxes {
+public class _10MinBooksFromAllBoxes {
     public static void main(String[] args) {
         int boxes [] = {1,5,3,1,2};
         System.out.println(getMinBooksFromBoxes(boxes));

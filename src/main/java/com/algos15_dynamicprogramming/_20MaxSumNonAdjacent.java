@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class MaxSumNonAdjacent {
+public class _20MaxSumNonAdjacent {
     public static void main(String args[]) {
         int arr[] = { 12, 9, 7, 33 };
         int n = arr.length;

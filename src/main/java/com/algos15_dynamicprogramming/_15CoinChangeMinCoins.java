@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class CoinChangeMinCoins {
+public class _15CoinChangeMinCoins {
     public static void main(String[] args) {
         int[] coins = {1,5,2};
         int amount = 3;

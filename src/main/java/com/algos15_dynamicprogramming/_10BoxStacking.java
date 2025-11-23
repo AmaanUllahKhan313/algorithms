@@ -3,7 +3,7 @@ package com.algos15_dynamicprogramming;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class BoxStacking {
+public class _10BoxStacking {
     public static void main(String[] args) {
         int cuboids [] [] = {
                 {7,11,17},

@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class MaxProfirFromStocksWithKthTransaction {
+public class _21MaxProfirFromStocksWithKthTransaction {
     public static void main(String[] args) {
         int transactions = 2;
         int[] stocksPrice = { 10, 22, 5, 75, 65, 80 };

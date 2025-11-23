@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class HitAndRun {
+public class _12HitAndRun {
     public static void main(String[] args) {
         int runs [] = {1,2,4,6};
         int target = 4;

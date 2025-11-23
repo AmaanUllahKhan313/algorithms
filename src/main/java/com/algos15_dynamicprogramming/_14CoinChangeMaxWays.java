@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class CoinChangeMaxWays {
+public class _14CoinChangeMaxWays {
     public static void main(String[] args) {
         int[] a = {1, 2, 3};
         int amount = 4;

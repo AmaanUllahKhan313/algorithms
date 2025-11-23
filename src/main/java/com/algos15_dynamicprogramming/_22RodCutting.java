@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class RodCutting {
+public class _22RodCutting {
     public static void main(String[] args) {
         int[] cuts = {1, 2, 3, 4, 5, 6, 7, 8};
         int rod = 5;
