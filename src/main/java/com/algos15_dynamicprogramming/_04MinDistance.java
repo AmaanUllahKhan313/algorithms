@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class _09MinDistance {
+public class _04MinDistance {
     public static void main(String[] args) {
 
         System.out.println(minDistance("ABCD", "FORABZZZCXXXD"));
