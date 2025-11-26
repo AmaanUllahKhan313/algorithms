@@ -1,6 +1,6 @@
 package com.algos15_dynamicprogramming;
 
-public class _19IsSubsetPresentOfGivenSum {
+public class _16IsSubsetPresentOfGivenSum {
     public static void main(String[] args) {
         System.out.println(getSubset(new int[]{5, 2, 8, 10, 3, 4},9));
     }
