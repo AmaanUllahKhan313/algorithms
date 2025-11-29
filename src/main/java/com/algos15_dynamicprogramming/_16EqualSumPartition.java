@@ -11,7 +11,7 @@ public class _16EqualSumPartition {
             sum+=ints[i];
         }
         return sum%2==0
-                ? _19IsSubsetPresentOfGivenSum.getSubset(ints,sum/2)
+                ? _16IsSubsetPresentOfGivenSum.getSubset(ints,sum/2)
                 :false;
     }
 }
