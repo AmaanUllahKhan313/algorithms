@@ -2,9 +2,15 @@ package com.algos15_dynamicprogramming;
 
 public class _16IsSubsetPresentOfGivenSum {
     public static void main(String[] args) {
-        System.out.println(getSubset(new int[]{5, 2, 8, 10, 3, 4},9));
+        int [] ints = new int[]{5, 2, 8, 10, 3, 4};
+        int sum = 9;
+        System.out.println(getSubset(ints,sum));
     }
-    public static boolean getSubset(int[] a, int sum) {
+    public static boolean getSubset(int[] ints, int sum) {
+        boolean[][] result  = getSubsetMatrix(ints,sum);
+        return result[ints.length][sum];
+    }
+    public static boolean[][] getSubsetMatrix(int[] a, int sum) {
         boolean[][] result = new boolean[a.length+1][sum+1];
         for (int i = 0; i <= a.length; i++)
             result[i][0] = true;
@@ -19,6 +25,6 @@ public class _16IsSubsetPresentOfGivenSum {
                 }
             }
         }
-        return result[a.length][sum];
+        return result;
     }
 }

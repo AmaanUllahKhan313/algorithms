@@ -1,5 +1,9 @@
 package com.algos15_dynamicprogramming;
 
+import java.util.IntSummaryStatistics;
+
+import static com.algos15_dynamicprogramming._16IsSubsetPresentOfGivenSum.getSubsetMatrix;
+
 public class _18FinMinDifferenceInArrayPartition {
 
     public static void main(String[] args) {
@@ -9,27 +13,7 @@ public class _18FinMinDifferenceInArrayPartition {
             sum+=a[i];
         }
         int maxDiff= sum/2;
-        boolean [][] t = new boolean[a.length+1][maxDiff+1];
-        for (int i = 0; i <= a.length; i++)
-            t[i][0] = true;
-        for (int i = 1; i <= maxDiff; i++)
-            t[0][i] = false;
-
-        for(int i =1 ;i<=a.length;i++){
-            for(int j = 1;j<=maxDiff;j++){
-                if(a[i-1]<=j){
-                    t[i][j]=t[i-1][j] || t[i-1][j-a[i-1]];
-                }else{
-                    t[i][j]=t[i-1][j];
-                }
-            }
-        }
-        for(int i =0;i<=a.length;i++){
-            for(int j=0;j<=sum;j++){
-                System.out.print(t[i][j]+"\t");
-            }
-            System.out.println();
-        }
+        boolean [][] t = getSubsetMatrix(a,sum);
         for (int k = maxDiff; k >= 0; k--)
         {
             if (t[a.length][k] == true)
