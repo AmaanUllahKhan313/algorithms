@@ -5,12 +5,12 @@ import java.util.Iterator;
 
 class IsCyclic {
     public static void main(String args[]) {
-        Graph g = Graph.getGraph();
+        _0Graph g = _0Graph.getGraph();
         System.out.print("is Cyclic : ");
         System.out.print(isCyclic(0,new boolean[g.V],g));
     }
 
-    static boolean isCyclic(int v, boolean visited[],Graph g){
+    static boolean isCyclic(int v, boolean visited[],_0Graph g){
         if(visited[v])
             return true;
         visited[v] = true;

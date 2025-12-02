@@ -2,10 +2,10 @@ package com.algos16_graphs;
 
 import java.util.LinkedList;
 
-class Graph {
+class _0Graph {
     public int V;
     public LinkedList<Integer> adj[];
-    Graph(int v) {
+    _0Graph(int v) {
         V = v;
         adj = new LinkedList[v];
         for (int i = 0; i < v; ++i)
@@ -14,8 +14,8 @@ class Graph {
     void addEdge(int v, int w) {
         adj[v].add(w);
     }
-    public static Graph getGraph(){
-        Graph g = new Graph(6);
+    public static _0Graph getGraph(){
+        _0Graph g = new _0Graph(6);
         g.addEdge(5, 2);
         g.addEdge(5, 0);
         g.addEdge(4, 0);

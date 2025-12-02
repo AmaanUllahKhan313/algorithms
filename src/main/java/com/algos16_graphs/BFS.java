@@ -6,11 +6,11 @@ import java.util.LinkedList;
 class BFS {
 
     public static void main(String args[]) {
-        Graph g = Graph.getGraph();
+        _0Graph g = _0Graph.getGraph();
         System.out.println("BFS : ");
         BFS(2,new boolean[g.V],g);
     }
-    static void BFS(int s, boolean[] visited,Graph g) {
+    static void BFS(int s, boolean[] visited,_0Graph g) {
         LinkedList<Integer> queue = new LinkedList<Integer>();
         visited[s] = true;
         queue.add(s);
