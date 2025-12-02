@@ -2,7 +2,7 @@ package com.algos16_graphs;
 
 import java.util.LinkedList;
 
-class _0Graph {
+public class _0Graph {
     public int V;
     public LinkedList<Integer> adj[];
     _0Graph(int v) {
@@ -24,4 +24,4 @@ class _0Graph {
         g.addEdge(3, 1);
         return g;
     }
-    }
+}
