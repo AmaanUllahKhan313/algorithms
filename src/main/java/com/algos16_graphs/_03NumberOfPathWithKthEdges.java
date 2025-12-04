@@ -8,10 +8,7 @@ public class _03NumberOfPathWithKthEdges {
                 { 0, 0, 0, 1 },
                 { 0, 0, 0, 0 }
         };
-
-        System.out.println("All paths from 0 to 3 is :" + countAllPaths(graph,0,3));
         System.out.println("All paths from 0 to 3 with exactly two edges is : "+countAllPathsWithKEdges(graph,0,3,2));
-
     }
 
     private static int countAllPathsWithKEdges(int[][] graph, int src, int dest, int edges) {
@@ -25,16 +22,6 @@ public class _03NumberOfPathWithKthEdges {
         for (int i = 0; i < graph.length; i++) {
             if (graph[src][i]==1)
                 count+=countAllPathsWithKEdges(graph,i,dest,edges-1);
-        }
-        return count;
-    }
-    private static int countAllPaths(int[][] graph, int src, int dest) {
-        if (src==dest)
-            return 1;
-        int count = 0;
-        for (int i = 0; i < graph.length; i++) {
-            if(graph[src][i]==1)
-                count+=countAllPaths(graph,i,dest);
         }
         return count;
     }
