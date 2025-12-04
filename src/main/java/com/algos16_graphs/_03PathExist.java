@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-public class PathExist {
+public class _03PathExist {
     static boolean found = false;
     static void dfs(Map<Integer, List<Integer>> graph, boolean[] visited, int start, int end) {
         if (visited[start] || found) return;

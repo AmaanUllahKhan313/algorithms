@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class ShortestPath {
+public class _08ShortestPath {
     static class PathAndCost{
         int node;
         int distance;

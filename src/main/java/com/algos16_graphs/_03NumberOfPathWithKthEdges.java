@@ -1,6 +1,6 @@
 package com.algos16_graphs;
 
-public class NumberOfPathWithKthEdges {
+public class _03NumberOfPathWithKthEdges {
     public static void main(String[] args) {
         int graph[][] = new int[][] {
                 { 0, 1, 1, 1 },

@@ -3,7 +3,7 @@ package com.algos16_graphs;
 import java.util.Iterator;
 import java.util.Stack;
 
-public class TopologicalSort {
+public class _05TopologicalSort {
     public static void main(String[] args) {
         _0Graph g = _0Graph.getGraph();
         System.out.println("Topological Sort : ");

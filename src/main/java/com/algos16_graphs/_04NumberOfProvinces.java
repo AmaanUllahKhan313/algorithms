@@ -2,7 +2,7 @@ package com.algos16_graphs;
 
 import java.util.Iterator;
 
-public class NumberOfProvinces {
+public class _04NumberOfProvinces {
     public static void main(String[] args) {
         int[][] M = {
                 {1, 1, 0},

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class KruskalMST {
+public class _09KruskalMST {
     public static void main(String[] args) {
        /* int graph[][] ={ { 0, 2, 0, 6, 0 },
                 { 2, 0, 3, 8, 5 },

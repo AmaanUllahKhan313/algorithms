@@ -1,6 +1,6 @@
 package com.algos16_graphs;
 
-public class CenterOfStarGraph {
+public class _10CenterOfStarGraph {
     public static void main(String[] args) {
         int[][] M = {
                 {1, 1, 0},

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class NQueen {
+public class _06NQueen {
     public static void main(String[] args) {
         int n = 4;
         List<List<Integer>> board = new ArrayList<>();

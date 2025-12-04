@@ -2,7 +2,7 @@ package com.algos16_graphs;
 
 import java.util.Iterator;
 
-class DFS {
+public class _01DFS {
 
     public static void main(String args[]) {
         _0Graph g = _0Graph.getGraph();

@@ -3,7 +3,7 @@ package com.algos16_graphs;
 import java.util.Iterator;
 
 
-class IsCyclic {
+public class _02IsCyclic {
     public static void main(String args[]) {
         _0Graph g = _0Graph.getGraph();
         System.out.print("is Cyclic : ");

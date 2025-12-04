@@ -3,7 +3,7 @@ package com.algos16_graphs;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-class BFS {
+public class _07BFS {
 
     public static void main(String args[]) {
         _0Graph g = _0Graph.getGraph();

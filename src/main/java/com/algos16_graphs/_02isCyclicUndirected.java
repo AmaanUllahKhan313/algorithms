@@ -1,6 +1,6 @@
 package com.algos16_graphs;
 
-public class isCyclicUndirected {
+public class _02isCyclicUndirected {
     public static void main(String[] args) {
         _0Graph graph = _0Graph.getGraph();
         boolean [] visited = new boolean[graph.V];
