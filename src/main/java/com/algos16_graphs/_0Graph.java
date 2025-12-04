@@ -32,4 +32,12 @@ public class _0Graph {
         graph.put(3, new ArrayList<>()); // no outgoing edges
         return graph;
     }
+    public static int[][] getGraphAsMatrix() {
+        int[][] M = {
+                {1, 1, 0},
+                {1, 1, 0},
+                {0, 0, 1}
+        };
+        return M;
+    }
 }
