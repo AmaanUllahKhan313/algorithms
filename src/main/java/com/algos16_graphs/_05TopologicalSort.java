@@ -13,18 +13,18 @@ public class _05TopologicalSort {
         Stack stack = new Stack();
         for (int i = 0; i < g.V; i++) {
             if(!visited[i])
-                util(i,visited,stack,g);
+                dfs(i,visited,stack,g);
         }
         while (!stack.isEmpty())
             System.out.println(stack.pop());
     }
-    private static void util(int i, boolean[] visited, Stack stack,_0Graph g) {
+    private static void dfs(int i, boolean[] visited, Stack stack, _0Graph g) {
         visited[i]=true;
         Iterator<Integer> iterator = g.adj[i].iterator();
         while (iterator.hasNext()){
             Integer j = iterator.next();
             if(!visited[j])
-                util(j,visited,stack,g);
+                dfs(j,visited,stack,g);
         }
         stack.push(i);
     }
