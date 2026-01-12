@@ -1,6 +1,7 @@
 package com.algos16_graphs;
 
 public class _04NumberOfProvinces {
+
     public static void main(String[] args) {
         System.out.println(getNumberOfProvinces(_0Graph.getGraphAsMatrix()));
     }
