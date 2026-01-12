@@ -9,11 +9,11 @@ public class _05TopologicalSort {
         System.out.println("Topological Sort : ");
         topoSort(new boolean[g.V],g);
     }
-    private static void topoSort(boolean[] visited, _0Graph g) {
+    private static void topoSort(boolean[] visited, _0Graph graph) {
         Stack stack = new Stack();
-        for (int i = 0; i < g.V; i++) {
+        for (int i = 0; i < graph.V; i++) {
             if(!visited[i])
-                dfs(i,visited,stack,g);
+                dfs(i,visited,stack,graph);
         }
         while (!stack.isEmpty())
             System.out.println(stack.pop());
