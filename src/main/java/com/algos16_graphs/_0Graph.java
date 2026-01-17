@@ -40,4 +40,26 @@ public class _0Graph {
         };
         return M;
     }
+    public static Edge[] graphWithEdgeWeightage() {
+        int V = 4;
+        Edge[] edges = {
+                new Edge(0,1,1),
+                new Edge(1,2,2),
+                new Edge(0,2,3),
+                new Edge(2,3,4),
+                new Edge(1,3,5)
+        };
+        return edges;
+    }
+    public static class Edge implements Comparable<Edge> {
+        int u, v, w;
+        Edge(int u, int v, int w) {
+            this.u = u;
+            this.v = v;
+            this.w = w;
+        }
+        public int compareTo(Edge e) {
+            return this.w - e.w;
+        }
+    }
 }
