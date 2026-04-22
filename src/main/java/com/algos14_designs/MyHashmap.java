@@ -11,6 +11,8 @@ public class MyHashmap{
         System.out.println(myHashmap.get(3));
         myHashmap.put(3,33);
         System.out.println(myHashmap.get(3));
+        myHashmap.remove(3);
+        System.out.println(myHashmap.get(3));
     }
     final ListNode[] nodes = new ListNode[10_000];
 
