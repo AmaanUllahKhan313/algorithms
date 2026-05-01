@@ -4,7 +4,7 @@ import java.util.stream.IntStream;
 
 public class A1B1A2B2 {
     public static void main(String[] args) {
-        int [] arr = new int [] {1,2,3,4,4,3};
+        int [] arr = new int [] {1,2,3,4,4,3};//sample input
         IntStream.of(getArrangedArray(arr)).forEach(System.out::print);
     }
     private static int [] getArrangedArray(int [] nums) {
