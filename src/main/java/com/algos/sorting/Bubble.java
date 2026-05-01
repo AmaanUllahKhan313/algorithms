@@ -15,7 +15,7 @@ public class Bubble {
     }
     public static void main(String args[]){
         System.out.println("Bubble sort program");
-//        int[] a ={5,4,3,2,1};
+//        int[] a ={5,4,3,2,1,0};
         int[] a ={1,2,3,4,5};
         for(int i:a) System.out.println(i);
         sort(a);
