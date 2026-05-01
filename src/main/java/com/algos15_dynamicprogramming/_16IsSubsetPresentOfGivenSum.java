@@ -1,0 +1,30 @@
+package com.algos15_dynamicprogramming;
+
+public class _16IsSubsetPresentOfGivenSum {
+    public static void main(String[] args) {
+        int [] ints = new int[]{5, 2, 8, 10, 3, 4};
+        int sum = 9;
+        System.out.println(getSubset(ints,sum));
+    }
+    public static boolean getSubset(int[] ints, int sum) {
+        boolean[][] result  = getSubsetMatrix(ints,sum);
+        return result[ints.length][sum];
+    }
+    public static boolean[][] getSubsetMatrix(int[] a, int sum) {
+        boolean[][] result = new boolean[a.length+1][sum+1];
+        for (int i = 0; i <= a.length; i++)
+            result[i][0] = true;
+        for (int i = 1; i <= sum; i++)
+            result[0][i] = false;
+        for(int i=1;i<=a.length;i++){
+            for(int j=1;j<=sum;j++){
+                if(a[i-1]<=j){
+                    result[i][j] = result[i-1][j-a[i-1]] || result[i-1][j];
+                }else{
+                    result[i][j] = result[i-1][j];
+                }
+            }
+        }
+        return result;
+    }
+}
