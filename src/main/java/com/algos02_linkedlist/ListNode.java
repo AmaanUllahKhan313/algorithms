@@ -3,13 +3,13 @@ package com.algos02_linkedlist;
 public class ListNode {
     public int val;
     public ListNode next;
-    static ListNode head = new ListNode(1);
     public ListNode(int data){
         this.val = data;
     }
     public ListNode(){
     }
     public static ListNode getDefaultSLL(){
+        ListNode head = new ListNode(1);
         ListNode n1 = new ListNode(2);
         ListNode n2 = new ListNode(3);
         ListNode n3 = new ListNode(4);
@@ -22,6 +22,7 @@ public class ListNode {
 
     }
     public static ListNode get11NodeSLL(){
+        ListNode head = new ListNode(1);
         ListNode n1 = new ListNode(2);
         ListNode n2 = new ListNode(3);
         ListNode n3 = new ListNode(4);
@@ -60,6 +61,7 @@ public class ListNode {
 
     }
     public static ListNode getPalidromeSLL(){
+        ListNode head = new ListNode(1);
         ListNode n1 = new ListNode(2);
         ListNode n2 = new ListNode(3);
         ListNode n3 = new ListNode(4);
@@ -85,6 +87,7 @@ public class ListNode {
 
     }
     public static ListNode getSLLWithLoop(){
+        ListNode head = new ListNode(1);
         ListNode n1 = new ListNode(2);
         ListNode n2 = new ListNode(3);
         ListNode n3 = new ListNode(4);
@@ -103,7 +106,7 @@ public class ListNode {
         //           ^-------------------^
 
     }
-    public static void  displaySLL(){
+    public static void  displaySLL(ListNode head){
         System.out.print(head.val);
         ListNode node = head.next;
         while(node!=null){
@@ -120,7 +123,7 @@ public class ListNode {
         }
         System.out.println();
     }
-    public static ListNode getMiddleElement(){
+    public static ListNode getMiddleElement(ListNode head){
         ListNode p1 = head.next;
         ListNode p2 = head;
         if(p1.next==null || p1.next.next == null) return null;

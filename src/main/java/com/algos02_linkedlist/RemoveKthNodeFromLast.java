@@ -3,9 +3,9 @@ package com.algos02_linkedlist;
 public class RemoveKthNodeFromLast {
     public static void main(String[] args) {
         ListNode head = ListNode.get11NodeSLL();
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
         removeNthFromEnd(head,2);
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
     }
     public static ListNode removeNthFromEnd(ListNode head, int n) {
 

@@ -4,7 +4,7 @@ public class PairwiseSwapping {
     public static void main(String[] args) {
         System.out.println("Alternate Reverse program...");
         ListNode head = ListNode.get11NodeSLL();
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
         pairwiseSwap(head);
         head.display(head);
     }

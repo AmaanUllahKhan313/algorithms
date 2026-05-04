@@ -4,7 +4,7 @@ public class   ReverseSLL {
     public static void main(String[] args) {
         System.out.println("Reversal program");
         ListNode head = ListNode.getDefaultSLL();
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
         head = reverseSLL(head);
         head.display(head);
     }

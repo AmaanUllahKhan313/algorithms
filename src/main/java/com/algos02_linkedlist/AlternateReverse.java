@@ -4,7 +4,7 @@ public class AlternateReverse {
     public static void main(String[] args) {
         System.out.println("Alternate Reverse program...");
         ListNode head = ListNode.get11NodeSLL();
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
         ListNode newHead = alternateReverse(head,3);
         newHead.display(newHead);
     }

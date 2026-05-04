@@ -4,11 +4,11 @@ public class PalindromeSLL {
     public static void main(String[] args) {
         System.out.println("Palindrome verification program");
         ListNode head = ListNode.getPalidromeSLL();
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
         boolean isPalidrome = isPalindrome(head);
         if(isPalidrome) System.out.println("The linked list is palindrome");
         else System.out.println("The linked list isn't palindrome");
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
     }
 
     private static boolean isPalindrome(ListNode originalHead) {

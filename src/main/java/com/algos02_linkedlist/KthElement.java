@@ -3,7 +3,7 @@ package com.algos02_linkedlist;
 public class KthElement {
     public static void main(String[] args){
         ListNode head = ListNode.getDefaultSLL();
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
         ListNode pointer = head;
         int k=3;
         for(int i=1;i<k;i++)pointer=pointer.next;

@@ -4,7 +4,7 @@ public class ReverseBetweenTwoNodesSLL {
     public static void main(String[] args) {
         System.out.println("Reversal program");
         ListNode head = ListNode.getDefaultSLL();
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
         head = reverseBetween(head,2,4);
         head.display(head);
     }

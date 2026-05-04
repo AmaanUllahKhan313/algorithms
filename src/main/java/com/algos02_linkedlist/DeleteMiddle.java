@@ -4,9 +4,9 @@ public class DeleteMiddle {
     public static void main(String[] args){
         System.out.println("Kth element program");
         ListNode head = ListNode.getDefaultSLL();
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
         deleteMiddleElement(head);
-        ListNode.displaySLL();
+        ListNode.displaySLL(head);
     }
 
     private static void deleteMiddleElement(ListNode head) {
