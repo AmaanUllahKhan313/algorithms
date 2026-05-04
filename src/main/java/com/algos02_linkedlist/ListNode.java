@@ -6,8 +6,6 @@ public class ListNode {
     public ListNode(int data){
         this.val = data;
     }
-    public ListNode(){
-    }
     public static ListNode getDefaultSLL(){
         ListNode head = new ListNode(1);
         ListNode n1 = new ListNode(2);
