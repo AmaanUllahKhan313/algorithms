@@ -21,7 +21,7 @@ public class AIInterviewQuestionGenerator {
         Path selected = javaFiles.get(random.nextInt(javaFiles.size()));
         String sourceCode =
                 Files.readString(selected, StandardCharsets.UTF_8);
-        String prompt = "You are a senior FAANG interviewer. I will provide ONLY the Java solution. Your task is to reconstruct the original DSA interview problem. Return in this format TITLE DIFFICULTY PROBLEM CONSTRAINTS SAMPLE INPUT SAMPLE OUTPUT TOPICS FOLLOW UPS Here is the Java solution "+sourceCode;
+        String prompt = "You are a senior FAANG interviewer. I will provide ONLY the Java solution. Your task is to reconstruct the DSA interview problem similar asked in companies interview. Return in this format TITLE DIFFICULTY PROBLEM CONSTRAINTS SAMPLE INPUT SAMPLE OUTPUT TOPICS FOLLOW UPS Here is the Java solution '"+sourceCode+"'";
         Toolkit.getDefaultToolkit()
                 .getSystemClipboard()
                 .setContents(new StringSelection(prompt), null);
