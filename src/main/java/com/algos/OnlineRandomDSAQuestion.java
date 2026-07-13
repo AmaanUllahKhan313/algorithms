@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class AIInterviewQuestionGenerator {
+public class OnlineRandomDSAQuestion {
     private static final String DSA_FOLDER =
             "E:/Amaan/office_office/freelancing workspace/algorithms/src/main/java/com";
     public static void main(String[] args) throws Exception {
@@ -39,7 +39,7 @@ public class AIInterviewQuestionGenerator {
     }
      private static List<Path> scanJavaFiles()
             throws IOException {
-        try (Stream<Path> stream = Files.walk(Paths.get(AIInterviewQuestionGenerator.DSA_FOLDER))) {
+        try (Stream<Path> stream = Files.walk(Paths.get(OnlineRandomDSAQuestion.DSA_FOLDER))) {
             return stream
                     .filter(Files::isRegularFile)
                     .filter(f -> f.toString().endsWith(".java"))

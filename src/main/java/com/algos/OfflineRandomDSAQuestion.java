@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class RandomDSAQuestion {
+public class OfflineRandomDSAQuestion {
 
     // Root package containing all DSA solutions
     private static final String ROOT_FOLDER =
